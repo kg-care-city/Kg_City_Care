@@ -3,60 +3,262 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KG City Care | Deep Cleaning Services Indore</title>
+
+<title>KG Care City | Cleaning Services Indore</title>
+
+<meta name="description" content="KG Care City provides professional home, office, shop and deep cleaning services in Indore. Call or WhatsApp for booking.">
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f5fbff;
     color:#17324d;
+    line-height:1.5;
 }
+
 header{
-    background:#0877b5;
+    background:linear-gradient(135deg,#064a91,#0877b5);
     color:white;
     text-align:center;
-    padding:25px 15px;
+    padding:28px 15px;
 }
-header h1{margin:0;font-size:32px;}
+
+header h1{
+    margin:0;
+    font-size:36px;
+}
+
+header p{
+    margin:7px 0 0;
+    font-size:17px;
+}
+
 .hero{
     text-align:center;
-    padding:55px 20px;
-    background:#e7f7ff;
+    padding:60px 20px;
+    background:linear-gradient(180deg,#e7f7ff,#ffffff);
 }
-.hero h2{font-size:30px;}
+
+.hero h2{
+    font-size:34px;
+    margin:0 0 12px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
 .btn{
     display:inline-block;
-    padding:14px 22px;
-    margin:8px;
-    border-radius:8px;
+    padding:14px 24px;
+    margin:7px;
+    border-radius:9px;
     text-decoration:none;
     font-weight:bold;
+    border:0;
+    cursor:pointer;
+    font-size:16px;
 }
-.call{background:#0877b5;color:white;}
-.whatsapp{background:#20a85a;color:white;}
-section{padding:40px 7%;}
-h2{text-align:center;}
+
+.call{
+    background:#0877b5;
+    color:white;
+}
+
+.whatsapp{
+    background:#20a85a;
+    color:white;
+}
+
+.book{
+    background:#064a91;
+    color:white;
+}
+
+section{
+    padding:45px 7%;
+}
+
+section h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
 .services{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:18px;
 }
+
 .card{
     background:white;
     padding:22px;
-    border-radius:12px;
-    box-shadow:0 3px 12px #00000018;
+    border-radius:14px;
+    box-shadow:0 4px 15px #00000015;
+    border:1px solid #e2edf5;
 }
-.contact{
+
+.card h3{
+    margin-top:0;
+    color:#064a91;
+}
+
+.price{
+    color:#087b32;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.note{
     text-align:center;
+    margin-top:25px;
+    padding:15px;
+    background:#eef9ee;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.price-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 15px #00000012;
+}
+
+.price-table th,
+.price-table td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+.price-table th{
+    background:#064a91;
+    color:white;
+}
+
+.price-table td:last-child{
+    font-weight:bold;
+    color:#087b32;
+}
+
+.category-title{
+    margin-top:40px;
+    color:#064a91;
+}
+
+.booking{
     background:#e7f7ff;
 }
+
+.booking-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:28px;
+    border-radius:15px;
+    box-shadow:0 4px 18px #00000015;
+}
+
+.booking-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.booking-box input,
+.booking-box select,
+.booking-box textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccd9e2;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-box textarea{
+    min-height:90px;
+    resize:vertical;
+}
+
+.booking-box button{
+    width:100%;
+    margin-top:22px;
+    padding:15px;
+    background:#20a85a;
+    color:white;
+    border:0;
+    border-radius:9px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.contact{
+    text-align:center;
+    background:#ffffff;
+}
+
+.contact-number{
+    font-size:30px;
+    font-weight:bold;
+    color:#064a91;
+}
+
+.why{
+    text-align:center;
+}
+
+.why .card{
+    text-align:center;
+}
+
 footer{
     background:#17324d;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px 15px;
+}
+
+footer p{
+    margin:5px;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:29px;
+    }
+
+    .hero h2{
+        font-size:27px;
+    }
+
+    section{
+        padding:35px 5%;
+    }
+
+    .price-table{
+        font-size:14px;
+    }
+
+    .price-table th,
+    .price-table td{
+        padding:10px 7px;
+    }
+
+    .contact-number{
+        font-size:25px;
+    }
 }
 </style>
 </head>
@@ -64,20 +266,26 @@ footer{
 <body>
 
 <header>
-<h1>KG City Care</h1>
-<p>Professional Deep Cleaning Services in Indore</p>
+<h1>KG Care City</h1>
+<p>Complete Cleaning Solutions – Indore</p>
 </header>
 
 <div class="hero">
 <h2>Professional Cleaning Services</h2>
-<p>Home, Shop & Office Deep Cleaning Services in Indore</p>
+<p>Home • Office • Shop • Deep Cleaning</p>
 
 <a class="btn call" href="tel:9589125706">📞 Call Now</a>
 
 <a class="btn whatsapp"
-href="https://wa.me/919589125706">
-💬 WhatsApp Now</a>
+href="https://wa.me/919589125706?text=Hello%20KG%20Care%20City,%20I%20want%20to%20book%20a%20cleaning%20service.">
+💬 WhatsApp Now
+</a>
+
+<a class="btn book" href="#booking">
+📅 Book a Service
+</a>
 </div>
+
 
 <section>
 <h2>Our Cleaning Services</h2>
@@ -86,17 +294,17 @@ href="https://wa.me/919589125706">
 
 <div class="card">
 <h3>🏠 Home Deep Cleaning</h3>
-<p>Complete home deep cleaning service.</p>
+<p>Complete home deep cleaning for 1 BHK, 2 BHK, 3 BHK, 4 BHK and empty/move-in homes.</p>
 </div>
 
 <div class="card">
 <h3>🍳 Kitchen Cleaning</h3>
-<p>Kitchen, tiles, cabinets and grease cleaning.</p>
+<p>Kitchen, tiles, cabinets, grease and detailed surface cleaning.</p>
 </div>
 
 <div class="card">
 <h3>🚿 Bathroom Cleaning</h3>
-<p>Bathroom floor, tiles and fittings cleaning.</p>
+<p>Floor, tiles, fittings and bathroom deep cleaning.</p>
 </div>
 
 <div class="card">
@@ -105,72 +313,374 @@ href="https://wa.me/919589125706">
 </div>
 
 <div class="card">
-<h3>🏪 Shop Cleaning</h3>
-<p>Shop and commercial space deep cleaning.</p>
-</div>
-
-<div class="card">
 <h3>🏢 Office Cleaning</h3>
-<p>Office and workplace cleaning services.</p>
+<p>Professional cleaning for offices and workplaces.</p>
 </div>
 
 <div class="card">
-<h3>🪟 Glass & Window Cleaning</h3>
-<p>Glass and window cleaning service.</p>
+<h3>🏪 Shop Cleaning</h3>
+<p>Deep cleaning for shops and commercial spaces.</p>
+</div>
+
+<div class="card">
+<h3>🪟 Glass & Window</h3>
+<p>Window and glass surface cleaning.</p>
 </div>
 
 <div class="card">
 <h3>🧹 Floor Cleaning</h3>
-<p>Floor and hard surface cleaning.</p>
+<p>Floor scrubbing, tile and grout cleaning.</p>
 </div>
 
 </div>
 </section>
 
+
 <section>
-<h2>Why Choose KG City Care?</h2>
+<h2>Cleaning Rates</h2>
+
+<h3 class="category-title">🏠 Home Deep Cleaning Packages</h3>
+
+<table class="price-table">
+<tr>
+<th>Home Size</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>1 BHK</td>
+<td>Full Home Deep Cleaning</td>
+<td>₹1,800 – ₹2,500</td>
+</tr>
+
+<tr>
+<td>2 BHK</td>
+<td>Full Home Deep Cleaning</td>
+<td>₹2,800 – ₹3,800</td>
+</tr>
+
+<tr>
+<td>3 BHK</td>
+<td>Full Home Deep Cleaning</td>
+<td>₹3,800 – ₹5,000</td>
+</tr>
+
+<tr>
+<td>4 BHK</td>
+<td>Full Home Deep Cleaning</td>
+<td>₹5,000 – ₹6,500</td>
+</tr>
+
+<tr>
+<td>Empty / Move-in</td>
+<td>Before shifting / Empty home</td>
+<td>₹3,000 – ₹7,000+</td>
+</tr>
+</table>
+
+
+<h3 class="category-title">🧼 Room / Area Cleaning</h3>
+
+<table class="price-table">
+
+<tr>
+<th>Service</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Kitchen Deep Cleaning</td>
+<td>₹800 – ₹1,500</td>
+</tr>
+
+<tr>
+<td>Bathroom Deep Cleaning</td>
+<td>₹400 – ₹700 / Bathroom</td>
+</tr>
+
+<tr>
+<td>Bedroom Cleaning</td>
+<td>₹700 – ₹1,200</td>
+</tr>
+
+<tr>
+<td>Living Room Cleaning</td>
+<td>₹800 – ₹1,300</td>
+</tr>
+
+<tr>
+<td>Balcony Cleaning</td>
+<td>₹400 – ₹800</td>
+</tr>
+
+</table>
+
+
+<h3 class="category-title">✨ Specialized Cleaning Services</h3>
+
+<table class="price-table">
+
+<tr>
+<th>Service</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Floor Scrubbing</td>
+<td>₹5 – ₹10 / sq ft</td>
+</tr>
+
+<tr>
+<td>Tile / Grout Cleaning</td>
+<td>₹8 – ₹20 / sq ft</td>
+</tr>
+
+<tr>
+<td>Window / Glass Cleaning</td>
+<td>₹300 – ₹800</td>
+</tr>
+
+<tr>
+<td>Fan Cleaning</td>
+<td>₹70 – ₹120 / Fan</td>
+</tr>
+
+<tr>
+<td>Sofa Cleaning</td>
+<td>₹200 – ₹350 / Seat</td>
+</tr>
+
+<tr>
+<td>5-Seater Sofa</td>
+<td>₹1,000 – ₹1,500</td>
+</tr>
+
+<tr>
+<td>L-Shape Sofa</td>
+<td>₹1,400 – ₹2,000</td>
+</tr>
+
+<tr>
+<td>Mattress Cleaning</td>
+<td>₹400 – ₹800</td>
+</tr>
+
+<tr>
+<td>Carpet Cleaning</td>
+<td>₹10 – ₹20 / sq ft</td>
+</tr>
+
+<tr>
+<td>Water Tank Cleaning</td>
+<td>₹700 – ₹1,500</td>
+</tr>
+
+<tr>
+<td>Chimney Cleaning</td>
+<td>₹500 – ₹1,000</td>
+</tr>
+
+<tr>
+<td>Exhaust Fan Cleaning</td>
+<td>₹150 – ₹300</td>
+</tr>
+
+<tr>
+<td>AC Indoor Unit Cleaning</td>
+<td>₹400 – ₹700</td>
+</tr>
+
+<tr>
+<td>Post-Construction Cleaning</td>
+<td>₹5 – ₹12 / sq ft</td>
+</tr>
+
+<tr>
+<td>Office / Shop Deep Cleaning</td>
+<td>₹6 – ₹12 / sq ft</td>
+</tr>
+
+</table>
+
+<div class="note">
+⚠️ Rates are approximate. Final price may vary according to area, size and condition of the property.
+</div>
+
+</section>
+
+
+<section class="why">
+
+<h2>Why Choose KG Care City?</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>✅ Professional Service</h3>
-<p>Cleaning work with attention to detail.</p>
+<h3>✅ Trained Professionals</h3>
+<p>Professional and detail-oriented cleaning service.</p>
 </div>
 
 <div class="card">
-<h3>✅ Home & Commercial</h3>
-<p>Services for homes, shops and offices.</p>
+<h3>🌿 Eco Friendly</h3>
+<p>Quality cleaning products and responsible service.</p>
 </div>
 
 <div class="card">
-<h3>✅ Easy Booking</h3>
-<p>Call or WhatsApp us for enquiry.</p>
+<h3>🛡️ Safe & Secure</h3>
+<p>Reliable service for homes and commercial spaces.</p>
+</div>
+
+<div class="card">
+<h3>⏰ On Time Service</h3>
+<p>We value your time and schedule.</p>
+</div>
+
+<div class="card">
+<h3>👍 Customer Satisfaction</h3>
+<p>Our goal is clean spaces and happy customers.</p>
 </div>
 
 </div>
+
 </section>
 
+
+<section class="booking" id="booking">
+
+<h2>📅 Book Your Cleaning Service</h2>
+
+<div class="booking-box">
+
+<p style="text-align:center;">
+Fill in your details and we will receive your booking request on WhatsApp.
+</p>
+
+<form onsubmit="sendBooking(); return false;">
+
+<label>Your Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label>Mobile Number</label>
+<input type="tel" id="mobile" placeholder="Enter mobile number" required>
+
+<label>Select Service</label>
+
+<select id="service" required>
+
+<option value="">Select a service</option>
+
+<option>1 BHK Home Deep Cleaning</option>
+<option>2 BHK Home Deep Cleaning</option>
+<option>3 BHK Home Deep Cleaning</option>
+<option>4 BHK Home Deep Cleaning</option>
+<option>Empty / Move-in Home Cleaning</option>
+
+<option>Kitchen Deep Cleaning</option>
+<option>Bathroom Deep Cleaning</option>
+<option>Bedroom Cleaning</option>
+<option>Living Room Cleaning</option>
+<option>Balcony Cleaning</option>
+
+<option>Sofa Cleaning</option>
+<option>Mattress Cleaning</option>
+<option>Carpet Cleaning</option>
+<option>Floor Scrubbing</option>
+<option>Tile / Grout Cleaning</option>
+<option>Window / Glass Cleaning</option>
+<option>Fan Cleaning</option>
+
+<option>Water Tank Cleaning</option>
+<option>Chimney Cleaning</option>
+<option>Exhaust Fan Cleaning</option>
+<option>AC Indoor Unit Cleaning</option>
+
+<option>Office / Shop Deep Cleaning</option>
+<option>Post-Construction Cleaning</option>
+
+</select>
+
+<label>Preferred Date</label>
+<input type="date" id="date" required>
+
+<label>Address / Area</label>
+<textarea id="address" placeholder="Enter your address or area in Indore" required></textarea>
+
+<label>Additional Details</label>
+<textarea id="details" placeholder="Any special requirement?"></textarea>
+
+<button type="submit">
+💬 Send Booking Request on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
 <section class="contact">
-<h2>Book Your Cleaning Service</h2>
 
-<p>Call or WhatsApp for booking and quotation.</p>
+<h2>Contact KG Care City</h2>
 
-<h2>📞 9589125706</h2>
+<p>For booking, quotation or enquiry</p>
+
+<div class="contact-number">
+📞 9589125706
+</div>
 
 <a class="btn call" href="tel:9589125706">
 Call Now
 </a>
 
 <a class="btn whatsapp"
-href="https://wa.me/919589125706">
+href="https://wa.me/919589125706?text=Hello%20KG%20Care%20City,%20I%20want%20a%20cleaning%20service.">
 WhatsApp Now
 </a>
+
+<p>📍 Indore, Madhya Pradesh</p>
+
 </section>
 
+
 <footer>
-<p>© 2026 KG City Care</p>
-<p>Deep Cleaning Services – Indore</p>
+
+<p><strong>KG Care City</strong></p>
+<p>Complete Cleaning Solutions – Indore</p>
+<p>© 2026 KG Care City. All Rights Reserved.</p>
+
 </footer>
+
+
+<script>
+
+function sendBooking(){
+
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const address = document.getElementById("address").value;
+    const details = document.getElementById("details").value;
+
+    const message =
+    "Hello KG Care City,%0A%0A" +
+    "*New Cleaning Booking Request*%0A%0A" +
+    "*Name:* " + encodeURIComponent(name) + "%0A" +
+    "*Mobile:* " + encodeURIComponent(mobile) + "%0A" +
+    "*Service:* " + encodeURIComponent(service) + "%0A" +
+    "*Preferred Date:* " + encodeURIComponent(date) + "%0A" +
+    "*Address/Area:* " + encodeURIComponent(address) + "%0A" +
+    "*Additional Details:* " + encodeURIComponent(details);
+
+    window.open(
+        "https://wa.me/919589125706?text=" + message,
+        "_blank"
+    );
+}
+
+</script>
 
 </body>
 </html>
