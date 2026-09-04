@@ -6,220 +6,176 @@
 
 <title>KG City Care | Cleaning Services Indore</title>
 
-<meta name="description" content="KG City Care provides professional home, office, shop and deep cleaning services in Indore. Call or WhatsApp for booking.">
+<meta name="description"
+content="KG City Care provides professional home deep cleaning, kitchen, bathroom, sofa, carpet, mattress, commercial, water tank, glass and pest control services in Indore.">
 
 <style>
-*{box-sizing:border-box;}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5fbff;
+    font-family:Arial,sans-serif;
+    background:#f4f9fc;
     color:#17324d;
-    line-height:1.5;
 }
 
 header{
-    background:linear-gradient(135deg,#064a91,#0877b5);
+    background:linear-gradient(135deg,#0877b5,#00a6d6);
     color:white;
     text-align:center;
-    padding:28px 15px;
+    padding:35px 15px;
 }
 
 header h1{
-    margin:0;
-    font-size:36px;
+    font-size:34px;
+    margin-bottom:8px;
 }
 
 header p{
-    margin:7px 0 0;
     font-size:17px;
 }
 
-.hero{
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:25px 15px;
+}
+
+.section-title{
     text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(180deg,#e7f7ff,#ffffff);
+    margin:35px 0 20px;
 }
 
-.hero h2{
-    font-size:34px;
-    margin:0 0 12px;
+.section-title h2{
+    font-size:27px;
+    color:#0877b5;
 }
 
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
+.section-title p{
+    color:#666;
+    margin-top:7px;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 24px;
-    margin:7px;
-    border-radius:9px;
-    text-decoration:none;
-    font-weight:bold;
-    border:0;
-    cursor:pointer;
-    font-size:16px;
-}
-
-.call{background:#0877b5;color:white;}
-.whatsapp{background:#20a85a;color:white;}
-.book{background:#064a91;color:white;}
-
-section{padding:45px 7%;}
-
-section h2{
-    text-align:center;
-    font-size:30px;
-    margin-bottom:30px;
-}
-
-.services{
+.service-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:18px;
 }
 
 .card{
     background:white;
-    padding:22px;
-    border-radius:14px;
-    box-shadow:0 4px 15px #00000015;
-    border:1px solid #e2edf5;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border:1px solid #e4edf2;
+    position:relative;
+}
+
+.hot{
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:#ff5722;
+    color:white;
+    padding:5px 9px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
 }
 
 .card h3{
-    margin-top:0;
-    color:#064a91;
-}
-
-.price{
-    color:#087b32;
+    color:#0877b5;
     font-size:20px;
-    font-weight:bold;
+    margin-bottom:10px;
+    padding-right:45px;
 }
 
-.note{
-    text-align:center;
-    margin-top:25px;
-    padding:15px;
-    background:#eef9ee;
-    border-radius:10px;
-    font-weight:bold;
+.duration{
+    color:#666;
+    font-size:14px;
+    margin-bottom:12px;
 }
 
-.price-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 3px 15px #00000012;
+.price-box{
+    margin:12px 0;
 }
 
-.price-table th,
-.price-table td{
-    padding:14px;
-    border-bottom:1px solid #ddd;
-    text-align:left;
-}
-
-.price-table th{
-    background:#064a91;
-    color:white;
-}
-
-.price-table td:last-child{
-    font-weight:bold;
-    color:#087b32;
-}
-
-.category-title{
-    margin-top:40px;
-    color:#064a91;
-}
-
-.booking{
-    background:#e7f7ff;
-}
-
-.booking-box{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    padding:28px;
-    border-radius:15px;
-    box-shadow:0 4px 18px #00000015;
-}
-
-.booking-box label{
-    display:block;
-    margin-top:15px;
-    margin-bottom:6px;
-    font-weight:bold;
-}
-
-.booking-box input,
-.booking-box select,
-.booking-box textarea{
-    width:100%;
-    padding:13px;
-    border:1px solid #ccd9e2;
-    border-radius:8px;
+.old-price{
+    color:#888;
+    text-decoration:line-through;
     font-size:16px;
 }
 
-.booking-box textarea{
-    min-height:90px;
-    resize:vertical;
-}
-
-.booking-box button{
-    width:100%;
-    margin-top:22px;
-    padding:15px;
-    background:#20a85a;
-    color:white;
-    border:0;
-    border-radius:9px;
-    font-size:17px;
+.offer-price{
+    color:#e53935;
+    font-size:28px;
     font-weight:bold;
-    cursor:pointer;
+    margin-top:4px;
 }
 
-.contact{
+.save{
+    display:inline-block;
+    background:#e8f7ed;
+    color:#16833b;
+    font-weight:bold;
+    padding:5px 9px;
+    border-radius:6px;
+    font-size:13px;
+    margin-top:7px;
+}
+
+.book-btn{
+    display:block;
     text-align:center;
-    background:#ffffff;
-}
-
-.contact-number{
-    font-size:30px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
     font-weight:bold;
-    color:#064a91;
+    margin-top:15px;
 }
 
-.why{text-align:center;}
-.why .card{text-align:center;}
+.book-btn:hover{
+    opacity:.9;
+}
+
+.note{
+    background:#fff8e1;
+    border-left:4px solid #ffb300;
+    padding:15px;
+    margin:30px 0;
+    border-radius:8px;
+    color:#5d4a00;
+}
 
 footer{
     background:#17324d;
     color:white;
     text-align:center;
     padding:25px 15px;
+    margin-top:40px;
 }
 
-footer p{margin:5px;}
+footer p{
+    margin:5px;
+}
 
 @media(max-width:600px){
-    header h1{font-size:29px;}
-    .hero h2{font-size:27px;}
-    section{padding:35px 5%;}
-    .price-table{font-size:14px;}
-    .price-table th,
-    .price-table td{padding:10px 7px;}
-    .contact-number{font-size:25px;}
+    header h1{
+        font-size:28px;
+    }
+
+    .section-title h2{
+        font-size:23px;
+    }
+
+    .card{
+        padding:17px;
+    }
 }
 </style>
 </head>
@@ -227,284 +183,903 @@ footer p{margin:5px;}
 <body>
 
 <header>
-<h1>KG City Care</h1>
-<p>Complete Cleaning Solutions – Indore</p>
+    <h1>KG City Care</h1>
+    <p>Professional Cleaning Services in Indore</p>
+    <p>Home • Office • Commercial • Deep Cleaning</p>
 </header>
 
-<div class="hero">
-<h2>Professional Cleaning Services</h2>
-<p>Home • Office • Shop • Deep Cleaning</p>
+<div class="container">
 
-<a class="btn call" href="tel:9589125706">📞 Call Now</a>
+<!-- MOST BOOKED -->
 
-<a class="btn whatsapp"
-href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%20book%20a%20cleaning%20service.">
-💬 WhatsApp Now
+<div class="section-title">
+    <h2>🔥 Most Booked Services</h2>
+    <p>Our popular cleaning services</p>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<span class="hot">HOT</span>
+<h3>🚿 1 Bathroom Cleaning</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹899</div>
+<div class="offer-price">₹549</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20book%201%20Bathroom%20Cleaning">
+Book Now / WhatsApp
 </a>
+</div>
 
-<a class="btn book" href="#booking">
-📅 Book a Service
+<div class="card">
+<span class="hot">HOT</span>
+<h3>🚿 2 Bathroom Cleaning</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,499</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹550</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20book%202%20Bathroom%20Cleaning">
+Book Now / WhatsApp
 </a>
 </div>
 
-<section>
-<h2>Our Cleaning Services</h2>
-
-<div class="services">
-
 <div class="card">
-<h3>🏠 Home Deep Cleaning</h3>
-<p>Complete home deep cleaning for 1 BHK, 2 BHK, 3 BHK, 4 BHK and empty/move-in homes.</p>
+<span class="hot">HOT</span>
+<h3>🏠 2 BHK Furnished</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹5,099</div>
+<div class="offer-price">₹3,599</div>
+<div class="save">Save ₹1,500</div>
 </div>
-
-<div class="card">
-<h3>🍳 Kitchen Cleaning</h3>
-<p>Kitchen, tiles, cabinets, grease and detailed surface cleaning.</p>
-</div>
-
-<div class="card">
-<h3>🚿 Bathroom Cleaning</h3>
-<p>Floor, tiles, fittings and bathroom deep cleaning.</p>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20book%202%20BHK%20Furnished%20Cleaning">
+Book Now / WhatsApp
+</a>
 </div>
 
 <div class="card">
-<h3>🛋️ Sofa Cleaning</h3>
-<p>Professional sofa and upholstery cleaning.</p>
+<span class="hot">HOT</span>
+<h3>🏠 3 BHK Furnished</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹5,899</div>
+<div class="offer-price">₹4,199</div>
+<div class="save">Save ₹1,700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20book%203%20BHK%20Furnished%20Cleaning">
+Book Now / WhatsApp
+</a>
+</div>
+
+</div>
+
+
+<!-- HOME -->
+
+<div class="section-title">
+<h2>🏠 Home Deep Cleaning</h2>
+<p>Complete home cleaning services</p>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>1 BHK Furnished</h3>
+<div class="duration">⏱️ Approx. 2–3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,999</div>
+<div class="offer-price">₹2,999</div>
+<div class="save">Save ₹1,000</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
 </div>
 
 <div class="card">
-<h3>🏢 Office Cleaning</h3>
-<p>Professional cleaning for offices and workplaces.</p>
+<h3>2 BHK Furnished</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹5,099</div>
+<div class="offer-price">₹3,599</div>
+<div class="save">Save ₹1,500</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
 </div>
 
 <div class="card">
-<h3>🏪 Shop Cleaning</h3>
-<p>Deep cleaning for shops and commercial spaces.</p>
+<h3>3 BHK Furnished</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹5,899</div>
+<div class="offer-price">₹4,199</div>
+<div class="save">Save ₹1,700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
 </div>
 
 <div class="card">
-<h3>🪟 Glass & Window</h3>
-<p>Window and glass surface cleaning.</p>
+<h3>2 BHK Unfurnished</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,399</div>
+<div class="offer-price">₹3,099</div>
+<div class="save">Save ₹1,300</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- KITCHEN -->
+
+<div class="section-title">
+<h2>🍳 Kitchen Cleaning</h2>
+<p>Deep cleaning and degreasing</p>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Chimney Cleaning</h3>
+<div class="duration">⏱️ As per condition</div>
+<div class="price-box">
+<div class="old-price">₹899</div>
+<div class="offer-price">₹549</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
 </div>
 
 <div class="card">
-<h3>🧹 Floor Cleaning</h3>
-<p>Floor scrubbing, tile and grout cleaning.</p>
+<h3>Fridge + Chimney + Stove + Exhaust</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,499</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹550</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Full Kitchen Without Chimney</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,899</div>
+<div class="offer-price">₹1,199</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Full Empty Kitchen</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,699</div>
+<div class="offer-price">₹1,099</div>
+<div class="save">Save ₹600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Full Kitchen With Chimney</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,099</div>
+<div class="offer-price">₹1,399</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Chimney + Fridge</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹999</div>
+<div class="offer-price">₹649</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
 </div>
 
 </div>
-</section>
 
-<section>
-<h2>Cleaning Rates</h2>
 
-<h3 class="category-title">🏠 Home Deep Cleaning Packages</h3>
+<!-- BATHROOM -->
 
-<table class="price-table">
-<tr>
-<th>Home Size</th>
-<th>Description</th>
-<th>Price</th>
-</tr>
+<div class="section-title">
+<h2>🚿 Bathroom Cleaning</h2>
+</div>
 
-<tr><td>1 BHK</td><td>Full Home Deep Cleaning</td><td>₹1,800 – ₹2,500</td></tr>
-<tr><td>2 BHK</td><td>Full Home Deep Cleaning</td><td>₹2,800 – ₹3,800</td></tr>
-<tr><td>3 BHK</td><td>Full Home Deep Cleaning</td><td>₹3,800 – ₹5,000</td></tr>
-<tr><td>4 BHK</td><td>Full Home Deep Cleaning</td><td>₹5,000 – ₹6,500</td></tr>
-<tr><td>Empty / Move-in</td><td>Before shifting / Empty home</td><td>₹3,000 – ₹7,000+</td></tr>
-</table>
+<div class="service-grid">
 
-<h3 class="category-title">🧼 Room / Area Cleaning</h3>
+<div class="card">
+<h3>1 Bathroom</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹899</div>
+<div class="offer-price">₹549</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
 
-<table class="price-table">
-<tr><th>Service</th><th>Price</th></tr>
-<tr><td>Kitchen Deep Cleaning</td><td>₹800 – ₹1,500</td></tr>
-<tr><td>Bathroom Deep Cleaning</td><td>₹400 – ₹700 / Bathroom</td></tr>
-<tr><td>Bedroom Cleaning</td><td>₹700 – ₹1,200</td></tr>
-<tr><td>Living Room Cleaning</td><td>₹800 – ₹1,300</td></tr>
-<tr><td>Balcony Cleaning</td><td>₹400 – ₹800</td></tr>
-</table>
+<div class="card">
+<h3>2 Bathrooms</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,499</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹550</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
 
-<h3 class="category-title">✨ Specialized Cleaning Services</h3>
+<div class="card">
+<h3>3 Bathrooms</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,899</div>
+<div class="offer-price">₹1,199</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
 
-<table class="price-table">
-<tr><th>Service</th><th>Price</th></tr>
-<tr><td>Floor Scrubbing</td><td>₹5 – ₹10 / sq ft</td></tr>
-<tr><td>Tile / Grout Cleaning</td><td>₹8 – ₹20 / sq ft</td></tr>
-<tr><td>Window / Glass Cleaning</td><td>₹300 – ₹800</td></tr>
-<tr><td>Fan Cleaning</td><td>₹70 – ₹120 / Fan</td></tr>
-<tr><td>Sofa Cleaning</td><td>₹200 – ₹350 / Seat</td></tr>
-<tr><td>5-Seater Sofa</td><td>₹1,000 – ₹1,500</td></tr>
-<tr><td>L-Shape Sofa</td><td>₹1,400 – ₹2,000</td></tr>
-<tr><td>Mattress Cleaning</td><td>₹400 – ₹800</td></tr>
-<tr><td>Carpet Cleaning</td><td>₹10 – ₹20 / sq ft</td></tr>
-<tr><td>Water Tank Cleaning</td><td>₹700 – ₹1,500</td></tr>
-<tr><td>Chimney Cleaning</td><td>₹500 – ₹1,000</td></tr>
-<tr><td>Exhaust Fan Cleaning</td><td>₹150 – ₹300</td></tr>
-<tr><td>AC Indoor Unit Cleaning</td><td>₹400 – ₹700</td></tr>
-<tr><td>Post-Construction Cleaning</td><td>₹5 – ₹12 / sq ft</td></tr>
-<tr><td>Office / Shop Deep Cleaning</td><td>₹6 – ₹12 / sq ft</td></tr>
-</table>
+</div>
+
+
+<!-- SOFA -->
+
+<div class="section-title">
+<h2>🛋️ Sofa Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>3 Sofa Seats</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹999</div>
+<div class="offer-price">₹699</div>
+<div class="save">Save ₹300</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>4 Sofa Seats</h3>
+<div class="duration">⏱️ Approx. 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,199</div>
+<div class="offer-price">₹749</div>
+<div class="save">Save ₹450</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>5 Sofa Seats</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,299</div>
+<div class="offer-price">₹849</div>
+<div class="save">Save ₹450</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>6 Sofa Seats</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,499</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹550</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>7 Sofa Seats</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,599</div>
+<div class="offer-price">₹1,049</div>
+<div class="save">Save ₹550</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>8 Sofa Seats</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,899</div>
+<div class="offer-price">₹1,249</div>
+<div class="save">Save ₹650</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>9 Sofa Seats</h3>
+<div class="duration">⏱️ 5 Hours</div>
+<div class="price-box">
+<div class="old-price">₹1,999</div>
+<div class="offer-price">₹1,399</div>
+<div class="save">Save ₹600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>10 Sofa Seats</h3>
+<div class="duration">⏱️ 5 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,299</div>
+<div class="offer-price">₹1,549</div>
+<div class="save">Save ₹750</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>11 Sofa Seats</h3>
+<div class="duration">⏱️ 6 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,599</div>
+<div class="offer-price">₹1,749</div>
+<div class="save">Save ₹850</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>12 Sofa Seats</h3>
+<div class="duration">⏱️ 6 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,899</div>
+<div class="offer-price">₹1,949</div>
+<div class="save">Save ₹950</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- WATER TANK -->
+
+<div class="section-title">
+<h2>🚰 Water Tank Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Up to 500 L</h3>
+<div class="duration">⏱️ Approx. 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,999</div>
+<div class="offer-price">₹1,299</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>500–1000 L</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹2,499</div>
+<div class="offer-price">₹1,599</div>
+<div class="save">Save ₹900</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>1000–1500 L</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,499</div>
+<div class="offer-price">₹1,599</div>
+<div class="save">Save ₹900</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>1001–2000 L</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,799</div>
+<div class="offer-price">₹1,899</div>
+<div class="save">Save ₹900</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>1501–3000 L</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,799</div>
+<div class="offer-price">₹1,899</div>
+<div class="save">Save ₹900</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>3001–5000 L</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,299</div>
+<div class="offer-price">₹2,299</div>
+<div class="save">Save ₹1,000</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>5001–8000 L</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,499</div>
+<div class="offer-price">₹3,099</div>
+<div class="save">Save ₹1,400</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>8001–12000 L</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹5,799</div>
+<div class="offer-price">₹4,199</div>
+<div class="save">Save ₹1,600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- GLASS -->
+
+<div class="section-title">
+<h2>🪟 Glass & Window Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>10–100 Sq Ft</h3>
+<div class="duration">⏱️ 45 Minutes</div>
+<div class="price-box">
+<div class="old-price">₹1,199</div>
+<div class="offer-price">₹849</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>100–200 Sq Ft</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,799</div>
+<div class="offer-price">₹1,199</div>
+<div class="save">Save ₹600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>200–300 Sq Ft</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹2,299</div>
+<div class="offer-price">₹1,599</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>300–500 Sq Ft</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,699</div>
+<div class="offer-price">₹1,999</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>500–750 Sq Ft</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,799</div>
+<div class="offer-price">₹2,699</div>
+<div class="save">Save ₹1,100</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>750–1000 Sq Ft</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,999</div>
+<div class="offer-price">₹3,599</div>
+<div class="save">Save ₹1,400</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>1000–2000 Sq Ft</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹6,299</div>
+<div class="offer-price">₹4,699</div>
+<div class="save">Save ₹1,600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- COMMERCIAL -->
+
+<div class="section-title">
+<h2>🏢 Commercial Space Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Under 500 Sq Ft</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,799</div>
+<div class="offer-price">₹2,699</div>
+<div class="save">Save ₹1,100</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>501–1000 Sq Ft</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,999</div>
+<div class="offer-price">₹3,499</div>
+<div class="save">Save ₹1,500</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Restaurant Deep Cleaning &gt;500 Sq Ft</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,299</div>
+<div class="offer-price">₹3,099</div>
+<div class="save">Save ₹1,200</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>1001–2000 Sq Ft</h3>
+<div class="duration">⏱️ 4 Hours</div>
+<div class="price-box">
+<div class="old-price">₹6,499</div>
+<div class="offer-price">₹4,899</div>
+<div class="save">Save ₹1,600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>2001–3000 Sq Ft</h3>
+<div class="duration">⏱️ 5 Hours</div>
+<div class="price-box">
+<div class="old-price">₹10,799</div>
+<div class="offer-price">₹8,199</div>
+<div class="save">Save ₹2,600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>3001–4000 Sq Ft</h3>
+<div class="duration">⏱️ 6 Hours</div>
+<div class="price-box">
+<div class="old-price">₹13,199</div>
+<div class="offer-price">₹10,199</div>
+<div class="save">Save ₹3,000</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- CARPET & MATTRESS -->
+
+<div class="section-title">
+<h2>🧼 Carpet & Mattress Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Carpet 0–25 Sq Ft</h3>
+<div class="duration">⏱️ 30 Minutes</div>
+<div class="price-box">
+<div class="old-price">₹749</div>
+<div class="offer-price">₹449</div>
+<div class="save">Save ₹300</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 25–50 Sq Ft</h3>
+<div class="duration">⏱️ 45 Minutes</div>
+<div class="price-box">
+<div class="old-price">₹1,099</div>
+<div class="offer-price">₹749</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Single Bed Mattress</h3>
+<div class="duration">⏱️ 45 Minutes</div>
+<div class="price-box">
+<div class="old-price">₹1,099</div>
+<div class="offer-price">₹749</div>
+<div class="save">Save ₹350</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 50–100 Sq Ft</h3>
+<div class="duration">⏱️ 45 Minutes</div>
+<div class="price-box">
+<div class="old-price">₹1,399</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹450</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Double Bed Mattress</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,399</div>
+<div class="offer-price">₹949</div>
+<div class="save">Save ₹450</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 101–150 Sq Ft</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,599</div>
+<div class="offer-price">₹1,099</div>
+<div class="save">Save ₹500</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 151–250 Sq Ft</h3>
+<div class="duration">⏱️ 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹2,299</div>
+<div class="offer-price">₹1,599</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 251–350 Sq Ft</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,099</div>
+<div class="offer-price">₹2,299</div>
+<div class="save">Save ₹800</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 351–450 Sq Ft</h3>
+<div class="duration">⏱️ 2 Hours</div>
+<div class="price-box">
+<div class="old-price">₹3,899</div>
+<div class="offer-price">₹2,899</div>
+<div class="save">Save ₹1,000</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>Carpet 451–550 Sq Ft</h3>
+<div class="duration">⏱️ 3 Hours</div>
+<div class="price-box">
+<div class="old-price">₹4,999</div>
+<div class="offer-price">₹3,699</div>
+<div class="save">Save ₹1,300</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- CHAIR -->
+
+<div class="section-title">
+<h2>🪑 Chair Cleaning</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>10–15 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹1,899</div>
+<div class="offer-price">₹1,299</div>
+<div class="save">Save ₹600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>15–20 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹2,599</div>
+<div class="offer-price">₹1,799</div>
+<div class="save">Save ₹800</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>20–30 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹3,099</div>
+<div class="offer-price">₹2,199</div>
+<div class="save">Save ₹900</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>30–50 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹4,199</div>
+<div class="offer-price">₹3,099</div>
+<div class="save">Save ₹1,100</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>50–75 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹5,499</div>
+<div class="offer-price">₹4,099</div>
+<div class="save">Save ₹1,400</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>75–100 Chairs</h3>
+<div class="price-box">
+<div class="old-price">₹6,499</div>
+<div class="offer-price">₹4,999</div>
+<div class="save">Save ₹1,500</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- PEST CONTROL -->
+
+<div class="section-title">
+<h2>🪳 Pest Control</h2>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>1 BHK Pest Control</h3>
+<div class="duration">⏱️ Approx. 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,299</div>
+<div class="offer-price">₹999</div>
+<div class="save">Save ₹300</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>2 BHK Pest Control</h3>
+<div class="duration">⏱️ Approx. 1 Hour</div>
+<div class="price-box">
+<div class="old-price">₹1,799</div>
+<div class="offer-price">₹1,199</div>
+<div class="save">Save ₹600</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>3 BHK Pest Control</h3>
+<div class="duration">⏱️ Approx. 1–1.5 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,299</div>
+<div class="offer-price">₹1,599</div>
+<div class="save">Save ₹700</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+<div class="card">
+<h3>4 BHK Pest Control</h3>
+<div class="duration">⏱️ Approx. 1–1.5 Hours</div>
+<div class="price-box">
+<div class="old-price">₹2,799</div>
+<div class="offer-price">₹1,999</div>
+<div class="save">Save ₹800</div>
+</div>
+<a class="book-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER">Book Now / WhatsApp</a>
+</div>
+
+</div>
+
 
 <div class="note">
-⚠️ Rates are approximate. Final price may vary according to area, size and condition of the property.
-</div>
-
-</section>
-
-<section class="why">
-
-<h2>Why Choose KG City Care?</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>✅ Trained Professionals</h3>
-<p>Professional and detail-oriented cleaning service.</p>
-</div>
-
-<div class="card">
-<h3>🌿 Eco Friendly</h3>
-<p>Quality cleaning products and responsible service.</p>
-</div>
-
-<div class="card">
-<h3>🛡️ Safe & Secure</h3>
-<p>Reliable service for homes and commercial spaces.</p>
-</div>
-
-<div class="card">
-<h3>⏰ On Time Service</h3>
-<p>We value your time and schedule.</p>
-</div>
-
-<div class="card">
-<h3>👍 Customer Satisfaction</h3>
-<p>Our goal is clean spaces and happy customers.</p>
+<strong>📌 Note:</strong> Final price may vary depending on the size, condition and level of cleaning required. Please confirm the service details before booking.
 </div>
 
 </div>
-</section>
-
-<section class="booking" id="booking">
-
-<h2>📅 Book Your Cleaning Service</h2>
-
-<div class="booking-box">
-
-<p style="text-align:center;">
-Fill in your details and we will receive your booking request on WhatsApp.
-</p>
-
-<form onsubmit="sendBooking(); return false;">
-
-<label>Your Name</label>
-<input type="text" id="name" placeholder="Enter your name" required>
-
-<label>Mobile Number</label>
-<input type="tel" id="mobile" placeholder="Enter mobile number" required>
-
-<label>Select Service</label>
-
-<select id="service" required>
-<option value="">Select a service</option>
-<option>1 BHK Home Deep Cleaning</option>
-<option>2 BHK Home Deep Cleaning</option>
-<option>3 BHK Home Deep Cleaning</option>
-<option>4 BHK Home Deep Cleaning</option>
-<option>Empty / Move-in Home Cleaning</option>
-<option>Kitchen Deep Cleaning</option>
-<option>Bathroom Deep Cleaning</option>
-<option>Bedroom Cleaning</option>
-<option>Living Room Cleaning</option>
-<option>Balcony Cleaning</option>
-<option>Sofa Cleaning</option>
-<option>Mattress Cleaning</option>
-<option>Carpet Cleaning</option>
-<option>Floor Scrubbing</option>
-<option>Tile / Grout Cleaning</option>
-<option>Window / Glass Cleaning</option>
-<option>Fan Cleaning</option>
-<option>Water Tank Cleaning</option>
-<option>Chimney Cleaning</option>
-<option>Exhaust Fan Cleaning</option>
-<option>AC Indoor Unit Cleaning</option>
-<option>Office / Shop Deep Cleaning</option>
-<option>Post-Construction Cleaning</option>
-</select>
-
-<label>Preferred Date</label>
-<input type="date" id="date" required>
-
-<label>Address / Area</label>
-<textarea id="address" placeholder="Enter your address or area in Indore" required></textarea>
-
-<label>Additional Details</label>
-<textarea id="details" placeholder="Any special requirement?"></textarea>
-
-<button type="submit">
-💬 Send Booking Request on WhatsApp
-</button>
-
-</form>
-</div>
-</section>
-
-<section class="contact">
-
-<h2>Contact KG City Care</h2>
-
-<p>For booking, quotation or enquiry</p>
-
-<div class="contact-number">
-📞 9589125706
-</div>
-
-<a class="btn call" href="tel:9589125706">Call Now</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20a%20cleaning%20service.">
-WhatsApp Now
-</a>
-
-<p>📍 Indore, Madhya Pradesh</p>
-
-</section>
 
 <footer>
 <p><strong>KG City Care</strong></p>
-<p>Complete Cleaning Solutions – Indore</p>
-<p>© 2026 KG City Care. All Rights Reserved.</p>
+<p>Professional Cleaning Services in Indore</p>
+<p>Home • Office • Commercial • Deep Cleaning</p>
+<p>📞 Book Now | WhatsApp</p>
 </footer>
-
-<script>
-
-function sendBooking(){
-
-    const name = document.getElementById("name").value;
-    const mobile = document.getElementById("mobile").value;
-    const service = document.getElementById("service").value;
-    const date = document.getElementById("date").value;
-    const address = document.getElementById("address").value;
-    const details = document.getElementById("details").value;
-
-    const message =
-    "Hello KG City Care,%0A%0A" +
-    "*New Cleaning Booking Request*%0A%0A" +
-    "*Name:* " + encodeURIComponent(name) + "%0A" +
-    "*Mobile:* " + encodeURIComponent(mobile) + "%0A" +
-    "*Service:* " + encodeURIComponent(service) + "%0A" +
-    "*Preferred Date:* " + encodeURIComponent(date) + "%0A" +
-    "*Address/Area:* " + encodeURIComponent(address) + "%0A" +
-    "*Additional Details:* " + encodeURIComponent(details);
-
-    window.open(
-        "https://wa.me/919589125706?text=" + message,
-        "_blank"
-    );
-}
-
-</script>
 
 </body>
 </html>
