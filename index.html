@@ -10,561 +10,549 @@
 
 <style>
 :root{
- --blue:#0877b5;
- --cyan:#00a6d6;
- --dark:#12344d;
- --green:#20b866;
- --red:#e53935;
- --light:#f3f9fc;
- --border:#e1edf3;
+  --blue:#0877b5;
+  --cyan:#00a6d6;
+  --dark:#12344d;
+  --green:#20b866;
+  --red:#e53935;
+  --light:#f3f9fc;
+  --border:#e1edf3;
 }
 
 *{
- box-sizing:border-box;
- margin:0;
- padding:0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
- font-family:Arial,Helvetica,sans-serif;
- background:var(--light);
- color:var(--dark);
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:var(--dark);
 }
 
 header{
- background:linear-gradient(135deg,#05639a,#00addb);
- color:white;
+  background:linear-gradient(135deg,#05639a,#00addb);
+  color:white;
 }
 
 .topbar{
- max-width:1200px;
- margin:auto;
- padding:14px 18px;
- display:flex;
- align-items:center;
- justify-content:space-between;
+  max-width:1200px;
+  margin:auto;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
- display:flex;
- align-items:center;
- gap:10px;
- font-size:22px;
- font-weight:900;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:900;
 }
 
 .logo-icon{
- width:48px;
- height:48px;
- border-radius:15px;
- background:white;
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:25px;
- box-shadow:0 8px 20px #0003;
+  width:48px;
+  height:48px;
+  border-radius:15px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  box-shadow:0 8px 20px #0003;
 }
 
 .top-call{
- color:white;
- text-decoration:none;
- font-weight:bold;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 .hero{
- max-width:1200px;
- margin:auto;
- text-align:center;
- padding:45px 15px 60px;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+  padding:45px 15px 60px;
 }
 
 .hero h1{
- font-size:clamp(34px,6vw,58px);
- margin-bottom:15px;
+  font-size:clamp(34px,6vw,58px);
+  margin-bottom:15px;
 }
 
 .hero h1 span{
- color:#fff19b;
+  color:#fff19b;
 }
 
 .hero p{
- max-width:720px;
- margin:auto;
- font-size:18px;
- line-height:1.6;
+  max-width:720px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.6;
 }
 
 .hero-buttons{
- margin-top:25px;
- display:flex;
- justify-content:center;
- gap:12px;
- flex-wrap:wrap;
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
 .hero-btn{
- display:inline-block;
- padding:13px 22px;
- border-radius:12px;
- background:white;
- color:var(--blue);
- text-decoration:none;
- font-weight:bold;
+  display:inline-block;
+  padding:13px 22px;
+  border-radius:12px;
+  background:white;
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:bold;
 }
 
 .hero-btn.whatsapp{
- background:#25d366;
- color:white;
+  background:#25d366;
+  color:white;
 }
 
 .container{
- max-width:1200px;
- margin:auto;
- padding:20px 15px 100px;
+  max-width:1200px;
+  margin:auto;
+  padding:20px 15px 70px;
 }
 
 .trust{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:12px;
- margin-top:-30px;
- position:relative;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:-30px;
+  position:relative;
 }
 
 .trust div{
- background:white;
- padding:16px;
- text-align:center;
- border-radius:15px;
- box-shadow:0 7px 25px #00000012;
- font-weight:bold;
+  background:white;
+  padding:16px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 7px 25px #00000012;
+  font-weight:bold;
 }
 
 .section-title{
- text-align:center;
- margin:40px 0 20px;
+  text-align:center;
+  margin:40px 0 20px;
 }
 
 .section-title h2{
- color:var(--blue);
- font-size:28px;
+  color:var(--blue);
+  font-size:28px;
 }
 
 .section-title p{
- color:#687983;
- margin-top:7px;
-}
-
-/* CATEGORY */
-
-.category-section{
- margin-top:35px;
-}
-
-.category-heading{
- display:flex;
- align-items:center;
- gap:14px;
- background:white;
- border-radius:18px;
- padding:17px 20px;
- margin-bottom:15px;
- border:1px solid var(--border);
- box-shadow:0 7px 22px #0000000b;
-}
-
-.category-icon{
- width:55px;
- height:55px;
- border-radius:15px;
- background:linear-gradient(135deg,#e7f7fd,#d8f4ff);
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:29px;
- flex-shrink:0;
-}
-
-.category-heading h2{
- color:var(--blue);
- font-size:23px;
-}
-
-.category-heading p{
- color:#73838c;
- font-size:13px;
- margin-top:4px;
+  color:#687983;
+  margin-top:7px;
 }
 
 .search{
- max-width:700px;
- margin:0 auto 16px;
+  max-width:700px;
+  margin:0 auto 16px;
 }
 
 .search input{
- width:100%;
- padding:15px 18px;
- border:1px solid #d7e5ec;
- border-radius:14px;
- font-size:16px;
- outline:none;
- background:white;
- box-shadow:0 4px 15px #00000009;
+  width:100%;
+  padding:15px 18px;
+  border:1px solid #d7e5ec;
+  border-radius:14px;
+  font-size:16px;
+  outline:none;
+  background:white;
+  box-shadow:0 4px 15px #00000009;
 }
 
 .filters{
- display:flex;
- gap:9px;
- overflow-x:auto;
- padding:4px 2px 14px;
- scrollbar-width:none;
+  display:flex;
+  gap:9px;
+  overflow-x:auto;
+  padding:4px 2px 14px;
+  scrollbar-width:none;
 }
 
 .filters::-webkit-scrollbar{
- display:none;
+  display:none;
 }
 
 .filter{
- border:0;
- padding:10px 16px;
- border-radius:50px;
- background:white;
- color:var(--blue);
- font-weight:bold;
- white-space:nowrap;
- cursor:pointer;
- box-shadow:0 3px 12px #0000000d;
+  border:0;
+  padding:10px 16px;
+  border-radius:50px;
+  background:white;
+  color:var(--blue);
+  font-weight:bold;
+  white-space:nowrap;
+  cursor:pointer;
+  box-shadow:0 3px 12px #0000000d;
 }
 
 .filter.active{
- background:var(--blue);
- color:white;
+  background:var(--blue);
+  color:white;
+}
+
+.category-section{
+  margin-top:35px;
+}
+
+.category-heading{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:white;
+  border-radius:18px;
+  padding:17px 20px;
+  margin-bottom:15px;
+  border:1px solid var(--border);
+  box-shadow:0 7px 22px #0000000b;
+}
+
+.category-icon{
+  width:55px;
+  height:55px;
+  border-radius:15px;
+  background:linear-gradient(135deg,#e7f7fd,#d8f4ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:29px;
+  flex-shrink:0;
+}
+
+.category-heading h2{
+  color:var(--blue);
+  font-size:23px;
+}
+
+.category-heading p{
+  color:#73838c;
+  font-size:13px;
+  margin-top:4px;
 }
 
 .service-grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:15px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
 }
 
 .card{
- background:white;
- border:1px solid var(--border);
- border-radius:18px;
- padding:17px;
- position:relative;
- box-shadow:0 8px 25px #0000000c;
- transition:.25s;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:17px;
+  position:relative;
+  box-shadow:0 8px 25px #0000000c;
+  transition:.25s;
 }
 
 .card:hover{
- transform:translateY(-4px);
- box-shadow:0 14px 30px #00000018;
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px #00000018;
 }
 
 .badge{
- position:absolute;
- right:12px;
- top:12px;
- background:#ff5722;
- color:white;
- padding:5px 9px;
- border-radius:50px;
- font-size:10px;
- font-weight:bold;
+  position:absolute;
+  right:12px;
+  top:12px;
+  background:#ff5722;
+  color:white;
+  padding:5px 9px;
+  border-radius:50px;
+  font-size:10px;
+  font-weight:bold;
 }
 
 .card h3{
- color:var(--blue);
- font-size:17px;
- line-height:1.35;
- padding-right:45px;
- margin-bottom:9px;
+  color:var(--blue);
+  font-size:17px;
+  line-height:1.35;
+  padding-right:45px;
+  margin-bottom:9px;
 }
 
 .duration{
- color:#6b7b84;
- font-size:13px;
- margin-bottom:10px;
+  color:#6b7b84;
+  font-size:13px;
+  margin-bottom:10px;
 }
 
 .old-price{
- color:#888;
- text-decoration:line-through;
- font-size:14px;
+  color:#888;
+  text-decoration:line-through;
+  font-size:14px;
 }
 
 .offer-price{
- color:var(--red);
- font-size:27px;
- font-weight:900;
- margin-top:3px;
+  color:var(--red);
+  font-size:27px;
+  font-weight:900;
+  margin-top:3px;
 }
 
 .save{
- display:inline-block;
- background:#e7f8ee;
- color:#16833d;
- padding:5px 9px;
- border-radius:7px;
- font-size:12px;
- font-weight:bold;
- margin-top:7px;
+  display:inline-block;
+  background:#e7f8ee;
+  color:#16833d;
+  padding:5px 9px;
+  border-radius:7px;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:7px;
 }
 
 .actions{
- display:flex;
- gap:8px;
- margin-top:14px;
+  display:flex;
+  gap:8px;
+  margin-top:14px;
 }
 
 .book-btn,
 .details-btn{
- flex:1;
- border:0;
- padding:10px 6px;
- border-radius:10px;
- font-weight:bold;
- text-align:center;
- cursor:pointer;
- text-decoration:none;
- font-size:13px;
+  flex:1;
+  border:0;
+  padding:10px 6px;
+  border-radius:10px;
+  font-weight:bold;
+  text-align:center;
+  cursor:pointer;
+  text-decoration:none;
+  font-size:13px;
 }
 
 .book-btn{
- background:#25d366;
- color:white;
+  background:#25d366;
+  color:white;
 }
 
 .details-btn{
- background:#edf6fb;
- color:var(--blue);
+  background:#edf6fb;
+  color:var(--blue);
 }
 
 .no-result{
- display:none;
- text-align:center;
- padding:30px;
- color:#777;
-}
-
-.note{
- margin-top:35px;
- background:#fff8df;
- border-left:4px solid #ffb300;
- padding:15px;
- border-radius:8px;
- line-height:1.5;
+  display:none;
+  text-align:center;
+  padding:30px;
+  color:#777;
 }
 
 footer{
- background:#12344d;
- color:white;
- text-align:center;
- padding:30px 15px;
+  background:#12344d;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
 }
 
 footer a{
- color:white;
- text-decoration:none;
- font-weight:bold;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 .floating{
- position:fixed;
- right:16px;
- bottom:18px;
- z-index:50;
- display:flex;
- flex-direction:column;
- gap:9px;
+  position:fixed;
+  right:16px;
+  bottom:18px;
+  z-index:50;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
 }
 
 .float-btn{
- width:55px;
- height:55px;
- border-radius:50%;
- display:flex;
- align-items:center;
- justify-content:center;
- color:white;
- text-decoration:none;
- font-size:23px;
- box-shadow:0 8px 20px #0004;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-decoration:none;
+  font-size:23px;
+  box-shadow:0 8px 20px #0004;
 }
 
 .float-whatsapp{
- background:#25d366;
+  background:#25d366;
 }
 
 .float-call{
- background:var(--blue);
+  background:var(--blue);
 }
 
-/* MODAL */
-
 .modal{
- display:none;
- position:fixed;
- inset:0;
- background:#0008;
- z-index:100;
- align-items:center;
- justify-content:center;
- padding:20px;
+  display:none;
+  position:fixed;
+  inset:0;
+  background:#0008;
+  z-index:100;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
 }
 
 .modal.show{
- display:flex;
+  display:flex;
 }
 
 .modal-box{
- background:white;
- width:min(600px,100%);
- max-height:85vh;
- overflow:auto;
- border-radius:20px;
- padding:25px;
- position:relative;
+  background:white;
+  width:min(600px,100%);
+  max-height:85vh;
+  overflow:auto;
+  border-radius:20px;
+  padding:25px;
+  position:relative;
 }
 
 .close{
- position:absolute;
- right:15px;
- top:12px;
- width:36px;
- height:36px;
- border:0;
- border-radius:50%;
- background:#eef5f8;
- font-size:22px;
- cursor:pointer;
+  position:absolute;
+  right:15px;
+  top:12px;
+  width:36px;
+  height:36px;
+  border:0;
+  border-radius:50%;
+  background:#eef5f8;
+  font-size:22px;
+  cursor:pointer;
 }
 
 .modal h2{
- color:var(--blue);
- padding-right:40px;
+  color:var(--blue);
+  padding-right:40px;
 }
 
 .modal-price{
- color:var(--red);
- font-size:29px;
- font-weight:bold;
- margin:15px 0;
+  color:var(--red);
+  font-size:29px;
+  font-weight:bold;
+  margin:15px 0;
 }
 
 .modal ul{
- padding-left:20px;
- line-height:1.8;
- color:#596972;
- margin-bottom:18px;
+  padding-left:20px;
+  line-height:1.8;
+  color:#596972;
+  margin-bottom:18px;
 }
 
-/* MOBILE */
+.modal-book{
+  display:block;
+  width:100%;
+}
 
 @media(max-width:850px){
-
- .service-grid{
-  grid-template-columns:repeat(2,1fr);
- }
-
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 
 @media(max-width:600px){
 
- .topbar{
-  padding:11px 13px;
- }
+  .topbar{
+    padding:11px 13px;
+  }
 
- .logo{
-  font-size:18px;
- }
+  .logo{
+    font-size:18px;
+  }
 
- .logo-icon{
-  width:40px;
-  height:40px;
-  font-size:21px;
- }
+  .logo-icon{
+    width:40px;
+    height:40px;
+    font-size:21px;
+  }
 
- .top-call{
-  font-size:13px;
- }
+  .top-call{
+    font-size:13px;
+  }
 
- .hero{
-  padding:38px 15px 48px;
- }
+  .hero{
+    padding:38px 15px 48px;
+  }
 
- .hero p{
-  font-size:15px;
- }
+  .hero p{
+    font-size:15px;
+  }
 
- .trust{
-  grid-template-columns:1fr;
-  margin-top:-20px;
- }
+  .trust{
+    grid-template-columns:1fr;
+    margin-top:-20px;
+  }
 
- .container{
-  padding:18px 12px 80px;
- }
+  .container{
+    padding:18px 12px 60px;
+  }
 
- .section-title h2{
-  font-size:23px;
- }
+  .section-title h2{
+    font-size:23px;
+  }
 
- .category-heading{
-  padding:13px;
- }
+  .category-heading{
+    padding:13px;
+  }
 
- .category-icon{
-  width:48px;
-  height:48px;
-  font-size:24px;
- }
+  .category-icon{
+    width:48px;
+    height:48px;
+    font-size:24px;
+  }
 
- .category-heading h2{
-  font-size:19px;
- }
+  .category-heading h2{
+    font-size:19px;
+  }
 
- .service-grid{
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:9px;
- }
+  .service-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+  }
 
- .card{
-  padding:12px;
-  border-radius:15px;
- }
+  .card{
+    padding:12px;
+    border-radius:15px;
+  }
 
- .card h3{
-  font-size:14px;
- }
+  .card h3{
+    font-size:14px;
+  }
 
- .offer-price{
-  font-size:22px;
- }
+  .offer-price{
+    font-size:22px;
+  }
 
- .old-price{
-  font-size:11px;
- }
+  .old-price{
+    font-size:11px;
+  }
 
- .duration{
-  font-size:11px;
- }
+  .duration{
+    font-size:11px;
+  }
 
- .save{
-  font-size:10px;
- }
+  .save{
+    font-size:10px;
+  }
 
- .actions{
-  flex-direction:column;
- }
+  .actions{
+    flex-direction:column;
+  }
 
- .book-btn,
- .details-btn{
-  width:100%;
-  font-size:11px;
-  padding:9px;
- }
+  .book-btn,
+  .details-btn{
+    width:100%;
+    font-size:11px;
+    padding:9px;
+  }
 }
 </style>
 </head>
@@ -573,709 +561,722 @@ footer a{
 
 <header>
 
-<div class="topbar">
+  <div class="topbar">
 
-<div class="logo">
-<div class="logo-icon">🧹✨</div>
-<span>KG City Care</span>
-</div>
+    <div class="logo">
+      <div class="logo-icon">🧹✨</div>
+      <span>KG City Care</span>
+    </div>
 
-<a class="top-call" href="tel:+919589125706">
-📞 9589125706
-</a>
+    <a class="top-call" href="tel:+919589125706">
+      📞 9589125706
+    </a>
 
-</div>
+  </div>
 
-<div class="hero">
+  <div class="hero">
 
-<h1>
-Professional <span>Cleaning Services</span> in Indore
-</h1>
+    <h1>
+      Professional <span>Cleaning Services</span> in Indore
+    </h1>
 
-<p>
-Home, kitchen, bathroom, sofa, water tank, glass,
-commercial, carpet, mattress, chair and pest control services.
-</p>
+    <p>
+      Home, kitchen, bathroom, sofa, water tank, glass,
+      commercial, carpet, mattress, chair and pest control services.
+    </p>
 
-<div class="hero-buttons">
+    <div class="hero-buttons">
 
-<a class="hero-btn whatsapp"
-href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%20book%20a%20cleaning%20service.">
-💬 Book on WhatsApp
-</a>
+      <a
+        class="hero-btn whatsapp"
+        href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%20book%20a%20cleaning%20service."
+      >
+        💬 Book on WhatsApp
+      </a>
 
-<a class="hero-btn" href="tel:+919589125706">
-📞 Call Now
-</a>
+      <a class="hero-btn" href="tel:+919589125706">
+        📞 Call Now
+      </a>
 
-</div>
+    </div>
 
-</div>
+  </div>
+
 </header>
 
 
 <div class="container">
 
-<div class="trust">
-
-<div>⭐ Professional Service</div>
-<div>💰 Attractive Offers</div>
-<div>📍 Serving Indore</div>
-
-</div>
+  <div class="trust">
+    <div>⭐ Professional Service</div>
+    <div>💰 Attractive Offers</div>
+    <div>📍 Serving Indore</div>
+  </div>
 
 
-<!-- MOST BOOKED -->
+  <div class="section-title">
+    <h2>🔥 Most Booked Services</h2>
+    <p>Popular services customers book most</p>
+  </div>
 
-<div class="section-title">
-<h2>🔥 Most Booked Services</h2>
-<p>Popular services customers book most</p>
-</div>
-
-<div id="popular" class="service-grid"></div>
+  <div id="popular" class="service-grid"></div>
 
 
-<!-- SEARCH -->
+  <div class="section-title">
 
-<div class="section-title">
+    <h2>🧹 Our Cleaning Services</h2>
 
-<h2>🧹 Our Cleaning Services</h2>
+    <p>
+      Choose your service and check the available rates
+    </p>
 
-<p>
-Choose your service and check the available rates
-</p>
-
-</div>
-
-<div class="search">
-
-<input
-id="search"
-type="search"
-placeholder="🔎 Search cleaning service..."
->
-
-</div>
+  </div>
 
 
-<div class="filters" id="filters"></div>
+  <div class="search">
+
+    <input
+      id="search"
+      type="search"
+      placeholder="🔎 Search cleaning service..."
+    >
+
+  </div>
 
 
-<div id="categoryContainer"></div>
+  <div class="filters" id="filters"></div>
 
-<div id="noResult" class="no-result">
-No service found. Please call or WhatsApp us for a custom quote.
-</div>
+  <div id="categoryContainer"></div>
 
-
-<div class="note">
-
-<b>Note:</b>
-Final service requirements and price may vary depending on
-size, condition and level of cleaning required.
-Please confirm the scope before booking.
-
-</div>
+  <div id="noResult" class="no-result">
+    No service found. Please call or WhatsApp us for a custom quote.
+  </div>
 
 </div>
 
 
 <footer>
 
-<h2>🧹 KG City Care</h2>
+  <h2>🧹 KG City Care</h2>
 
-<p style="margin-top:8px;">
-Professional Cleaning Services in Indore
-</p>
+  <p style="margin-top:8px;">
+    Professional Cleaning Services in Indore
+  </p>
 
-<p style="margin-top:8px;">
-📞 <a href="tel:+919589125706">9589125706</a>
-</p>
+  <p style="margin-top:8px;">
+    📞 <a href="tel:+919589125706">9589125706</a>
+  </p>
 
-<p style="margin-top:8px;">
-💬 <a href="https://wa.me/919589125706">WhatsApp Booking</a>
-</p>
+  <p style="margin-top:8px;">
+    💬 <a href="https://wa.me/919589125706">WhatsApp Booking</a>
+  </p>
 
-<p style="margin-top:14px;font-size:12px;opacity:.7;">
-© 2026 KG City Care. All Rights Reserved.
-</p>
+  <p style="margin-top:14px;font-size:12px;opacity:.7;">
+    © 2026 KG City Care. All Rights Reserved.
+  </p>
 
 </footer>
 
 
-<!-- FLOATING BUTTONS -->
-
 <div class="floating">
 
-<a
-class="float-btn float-whatsapp"
-href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%20book%20a%20cleaning%20service."
->
-💬
-</a>
+  <a
+    class="float-btn float-whatsapp"
+    href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%20book%20a%20cleaning%20service."
+  >
+    💬
+  </a>
 
-<a
-class="float-btn float-call"
-href="tel:+919589125706"
->
-📞
-</a>
+  <a
+    class="float-btn float-call"
+    href="tel:+919589125706"
+  >
+    📞
+  </a>
 
 </div>
 
-
-<!-- MODAL -->
 
 <div class="modal" id="modal">
 
-<div class="modal-box">
+  <div class="modal-box">
 
-<button class="close" onclick="closeModal()">×</button>
+    <button class="close" id="closeModal">
+      ×
+    </button>
 
-<h2 id="modalTitle"></h2>
+    <h2 id="modalTitle"></h2>
 
-<div id="modalDuration" class="duration"></div>
+    <div id="modalDuration" class="duration"></div>
 
-<div id="modalPrice" class="modal-price"></div>
+    <div id="modalPrice" class="modal-price"></div>
 
-<ul id="modalList"></ul>
+    <ul id="modalList"></ul>
 
-<a id="modalBook" class="book-btn" href="#">
-💬 Book Now on WhatsApp
-</a>
+    <a id="modalBook" class="book-btn modal-book" href="#">
+      💬 Book Now on WhatsApp
+    </a>
 
-</div>
+  </div>
 
 </div>
 
 
 <script>
 
-const WHATSAPP="919589125706";
-
-
-/* ALL SERVICES */
-
-const services=[
-
-/* HOME */
-
-["Home","🏠","1 BHK Furnished","2–3 Hours",3999,2999,"Home Deep Cleaning","HOT"],
-
-["Home","🏠","2 BHK Furnished","3 Hours",5099,3599,"Complete home deep cleaning","POPULAR"],
-
-["Home","🏠","3 BHK Furnished","4 Hours",5899,4199,"Complete home deep cleaning","POPULAR"],
-
-["Home","🏠","2 BHK Unfurnished","3 Hours",4399,3099,"Home deep cleaning",""],
-
-["Home","🏠","2 BHK Basic Cleaning","1 Hour",1899,1199,"Basic 2 BHK cleaning service",""],
-
-
-/* KITCHEN */
-
-["Kitchen","🍳","Chimney Cleaning","As per condition",899,549,"Chimney cleaning and degreasing","HOT"],
-
-["Kitchen","🍳","Fridge + Chimney + Stove + Exhaust","2 Hours",1499,949,"Kitchen appliance cleaning",""],
-
-["Kitchen","🍳","Full Kitchen Without Chimney","2 Hours",1899,1199,"Complete kitchen deep cleaning","POPULAR"],
-
-["Kitchen","🍳","Full Empty Kitchen","3 Hours",1699,1099,"Empty kitchen deep cleaning",""],
-
-["Kitchen","🍳","Full Kitchen With Chimney","2 Hours",2099,1399,"Complete kitchen cleaning with chimney","HOT"],
-
-["Kitchen","🍳","Chimney + Fridge","2 Hours",999,649,"Chimney and refrigerator cleaning",""],
-
-
-/* BATHROOM */
-
-["Bathroom","🚿","1 Bathroom","1 Hour",899,549,"Bathroom deep cleaning","HOT"],
-
-["Bathroom","🚿","2 Bathrooms","2 Hours",1499,949,"Bathroom deep cleaning","HOT"],
-
-["Bathroom","🚿","3 Bathrooms","2 Hours",1899,1199,"Bathroom deep cleaning",""],
-
-
-/* SOFA */
-
-["Sofa","🛋️","3 Sofa Seats","2 Hours",999,699,"Sofa cleaning",""],
-
-["Sofa","🛋️","4 Sofa Seats","Approx. 2 Hours",1199,749,"Sofa cleaning",""],
-
-["Sofa","🛋️","5 Sofa Seats","3 Hours",1299,849,"Sofa cleaning",""],
-
-["Sofa","🛋️","6 Sofa Seats","3 Hours",1499,949,"Sofa cleaning",""],
-
-["Sofa","🛋️","7 Sofa Seats","4 Hours",1599,1049,"Sofa cleaning",""],
-
-["Sofa","🛋️","8 Sofa Seats","4 Hours",1899,1249,"Sofa cleaning",""],
-
-["Sofa","🛋️","9 Sofa Seats","5 Hours",1999,1399,"Sofa cleaning",""],
-
-["Sofa","🛋️","10 Sofa Seats","5 Hours",2299,1549,"Sofa cleaning",""],
-
-["Sofa","🛋️","11 Sofa Seats","6 Hours",2599,1749,"Sofa cleaning",""],
-
-["Sofa","🛋️","12 Sofa Seats","6 Hours",2899,1949,"Sofa cleaning",""],
-
-
-/* WATER TANK */
-
-["Water Tank","🚰","Up to 500 L","Approx. 1 Hour",1999,1299,"Water tank cleaning",""],
-
-["Water Tank","🚰","500–1000 L","1 Hour",2499,1599,"Water tank cleaning",""],
-
-["Water Tank","🚰","1000–1500 L","2 Hours",2499,1599,"Water tank cleaning",""],
-
-["Water Tank","🚰","1001–2000 L","2 Hours",2799,1899,"Water tank cleaning",""],
-
-["Water Tank","🚰","1501–3000 L","2 Hours",2799,1899,"Water tank cleaning",""],
-
-["Water Tank","🚰","3001–5000 L","2 Hours",3299,2299,"Water tank cleaning",""],
-
-["Water Tank","🚰","5001–8000 L","3 Hours",4499,3099,"Water tank cleaning",""],
-
-["Water Tank","🚰","8001–12000 L","4 Hours",5799,4199,"Water tank cleaning",""],
-
-
-/* GLASS */
-
-["Glass & Window","🪟","10–100 Sq Ft","45 Minutes",1199,849,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","100–200 Sq Ft","1 Hour",1799,1199,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","200–300 Sq Ft","1 Hour",2299,1599,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","300–500 Sq Ft","2 Hours",2699,1999,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","500–750 Sq Ft","2 Hours",3799,2699,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","750–1000 Sq Ft","3 Hours",4999,3599,"Glass and window cleaning",""],
-
-["Glass & Window","🪟","1000–2000 Sq Ft","3 Hours",6299,4699,"Glass and window cleaning",""],
-
-
-/* COMMERCIAL */
-
-["Commercial","🏢","Under 500 Sq Ft","2 Hours",3799,2699,"Commercial deep cleaning",""],
-
-["Commercial","🏢","501–1000 Sq Ft","3 Hours",4999,3499,"Commercial deep cleaning",""],
-
-["Commercial","🏢","Restaurant Deep Cleaning >500 Sq Ft","3 Hours",4299,3099,"Restaurant deep cleaning",""],
-
-["Commercial","🏢","1001–2000 Sq Ft","4 Hours",6499,4899,"Commercial deep cleaning",""],
-
-["Commercial","🏢","2001–3000 Sq Ft","5 Hours",10799,8199,"Commercial deep cleaning",""],
-
-["Commercial","🏢","3001–4000 Sq Ft","6 Hours",13199,10199,"Commercial deep cleaning",""],
-
-
-/* CARPET & MATTRESS */
-
-["Carpet & Mattress","🧼","Carpet 0–25 Sq Ft","30 Minutes",749,449,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 25–50 Sq Ft","45 Minutes",1099,749,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Single Bed Mattress","45 Minutes",1099,749,"Mattress cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 50–100 Sq Ft","45 Minutes",1399,949,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Double Bed Mattress","1 Hour",1399,949,"Mattress cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 101–150 Sq Ft","1 Hour",1599,1099,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 151–250 Sq Ft","1 Hour",2299,1599,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 251–350 Sq Ft","2 Hours",3099,2299,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 351–450 Sq Ft","2 Hours",3899,2899,"Carpet cleaning",""],
-
-["Carpet & Mattress","🧼","Carpet 451–550 Sq Ft","3 Hours",4999,3699,"Carpet cleaning",""],
-
-
-/* CHAIR */
-
-["Chair","🪑","10–15 Chairs","1–2 Hours",1899,1299,"Chair cleaning",""],
-
-["Chair","🪑","15–20 Chairs","2 Hours",2599,1799,"Chair cleaning",""],
-
-["Chair","🪑","20–30 Chairs","3 Hours",3099,2199,"Chair cleaning",""],
-
-["Chair","🪑","30–50 Chairs","4 Hours",4199,3099,"Chair cleaning",""],
-
-["Chair","🪑","50–75 Chairs","5 Hours",5499,4099,"Chair cleaning",""],
-
-["Chair","🪑","75–100 Chairs","5 Hours",6499,4999,"Chair cleaning",""],
-
-
-/* PEST CONTROL */
-
-["Pest Control","🪳","1 BHK Cockroach & Ant Control","1–1.5 Hours",1299,999,"Cockroach and ant pest-control treatment",""],
-
-["Pest Control","🪳","2 BHK Cockroach & Ant Control","1–1.5 Hours",1799,1199,"Cockroach and ant pest-control treatment","HOT"],
-
-["Pest Control","🪳","3 BHK Cockroach & Ant Control","1–1.5 Hours",2299,1599,"Cockroach and ant pest-control treatment",""],
-
-["Pest Control","🪳","4 BHK Cockroach & Ant Control","1–1.5 Hours",2799,1999,"Cockroach and ant pest-control treatment",""]
+const WHATSAPP = "919589125706";
+
+
+const services = [
+
+  ["Home","🏠","1 BHK Furnished","2–3 Hours",3999,2999,"Home Deep Cleaning","HOT"],
+  ["Home","🏠","2 BHK Furnished","3 Hours",5099,3599,"Complete home deep cleaning","POPULAR"],
+  ["Home","🏠","3 BHK Furnished","4 Hours",5899,4199,"Complete home deep cleaning","POPULAR"],
+  ["Home","🏠","2 BHK Unfurnished","3 Hours",4399,3099,"Home deep cleaning",""],
+  ["Home","🏠","2 BHK Basic Cleaning","1 Hour",1899,1199,"Basic 2 BHK cleaning service",""],
+
+  ["Kitchen","🍳","Chimney Cleaning","As per condition",899,549,"Chimney cleaning and degreasing","HOT"],
+  ["Kitchen","🍳","Fridge + Chimney + Stove + Exhaust","2 Hours",1499,949,"Kitchen appliance cleaning",""],
+  ["Kitchen","🍳","Full Kitchen Without Chimney","2 Hours",1899,1199,"Complete kitchen deep cleaning","POPULAR"],
+  ["Kitchen","🍳","Full Empty Kitchen","3 Hours",1699,1099,"Empty kitchen deep cleaning",""],
+  ["Kitchen","🍳","Full Kitchen With Chimney","2 Hours",2099,1399,"Complete kitchen cleaning with chimney","HOT"],
+  ["Kitchen","🍳","Chimney + Fridge","2 Hours",999,649,"Chimney and refrigerator cleaning",""],
+
+  ["Bathroom","🚿","1 Bathroom","1 Hour",899,549,"Bathroom deep cleaning","HOT"],
+  ["Bathroom","🚿","2 Bathrooms","2 Hours",1499,949,"Bathroom deep cleaning","HOT"],
+  ["Bathroom","🚿","3 Bathrooms","2 Hours",1899,1199,"Bathroom deep cleaning",""],
+
+  ["Sofa","🛋️","3 Sofa Seats","2 Hours",999,699,"Sofa cleaning",""],
+  ["Sofa","🛋️","4 Sofa Seats","Approx. 2 Hours",1199,749,"Sofa cleaning",""],
+  ["Sofa","🛋️","5 Sofa Seats","3 Hours",1299,849,"Sofa cleaning",""],
+  ["Sofa","🛋️","6 Sofa Seats","3 Hours",1499,949,"Sofa cleaning",""],
+  ["Sofa","🛋️","7 Sofa Seats","4 Hours",1599,1049,"Sofa cleaning",""],
+  ["Sofa","🛋️","8 Sofa Seats","4 Hours",1899,1249,"Sofa cleaning",""],
+  ["Sofa","🛋️","9 Sofa Seats","5 Hours",1999,1399,"Sofa cleaning",""],
+  ["Sofa","🛋️","10 Sofa Seats","5 Hours",2299,1549,"Sofa cleaning",""],
+  ["Sofa","🛋️","11 Sofa Seats","6 Hours",2599,1749,"Sofa cleaning",""],
+  ["Sofa","🛋️","12 Sofa Seats","6 Hours",2899,1949,"Sofa cleaning",""],
+
+  ["Water Tank","🚰","Up to 500 L","Approx. 1 Hour",1999,1299,"Water tank cleaning",""],
+  ["Water Tank","🚰","500–1000 L","1 Hour",2499,1599,"Water tank cleaning",""],
+  ["Water Tank","🚰","1000–1500 L","2 Hours",2499,1599,"Water tank cleaning",""],
+  ["Water Tank","🚰","1001–2000 L","2 Hours",2799,1899,"Water tank cleaning",""],
+  ["Water Tank","🚰","1501–3000 L","2 Hours",2799,1899,"Water tank cleaning",""],
+  ["Water Tank","🚰","3001–5000 L","2 Hours",3299,2299,"Water tank cleaning",""],
+  ["Water Tank","🚰","5001–8000 L","3 Hours",4499,3099,"Water tank cleaning",""],
+  ["Water Tank","🚰","8001–12000 L","4 Hours",5799,4199,"Water tank cleaning",""],
+
+  ["Glass & Window","🪟","10–100 Sq Ft","45 Minutes",1199,849,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","100–200 Sq Ft","1 Hour",1799,1199,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","200–300 Sq Ft","1 Hour",2299,1599,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","300–500 Sq Ft","2 Hours",2699,1999,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","500–750 Sq Ft","2 Hours",3799,2699,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","750–1000 Sq Ft","3 Hours",4999,3599,"Glass and window cleaning",""],
+  ["Glass & Window","🪟","1000–2000 Sq Ft","3 Hours",6299,4699,"Glass and window cleaning",""],
+
+  ["Commercial","🏢","Under 500 Sq Ft","2 Hours",3799,2699,"Commercial deep cleaning",""],
+  ["Commercial","🏢","501–1000 Sq Ft","3 Hours",4999,3499,"Commercial deep cleaning",""],
+  ["Commercial","🏢","Restaurant Deep Cleaning >500 Sq Ft","3 Hours",4299,3099,"Restaurant deep cleaning",""],
+  ["Commercial","🏢","1001–2000 Sq Ft","4 Hours",6499,4899,"Commercial deep cleaning",""],
+  ["Commercial","🏢","2001–3000 Sq Ft","5 Hours",10799,8199,"Commercial deep cleaning",""],
+  ["Commercial","🏢","3001–4000 Sq Ft","6 Hours",13199,10199,"Commercial deep cleaning",""],
+
+  ["Carpet & Mattress","🧼","Carpet 0–25 Sq Ft","30 Minutes",749,449,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 25–50 Sq Ft","45 Minutes",1099,749,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Single Bed Mattress","45 Minutes",1099,749,"Mattress cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 50–100 Sq Ft","45 Minutes",1399,949,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Double Bed Mattress","1 Hour",1399,949,"Mattress cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 101–150 Sq Ft","1 Hour",1599,1099,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 151–250 Sq Ft","1 Hour",2299,1599,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 251–350 Sq Ft","2 Hours",3099,2299,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 351–450 Sq Ft","2 Hours",3899,2899,"Carpet cleaning",""],
+  ["Carpet & Mattress","🧼","Carpet 451–550 Sq Ft","3 Hours",4999,3699,"Carpet cleaning",""],
+
+  ["Chair","🪑","10–15 Chairs","1–2 Hours",1899,1299,"Chair cleaning",""],
+  ["Chair","🪑","15–20 Chairs","2 Hours",2599,1799,"Chair cleaning",""],
+  ["Chair","🪑","20–30 Chairs","3 Hours",3099,2199,"Chair cleaning",""],
+  ["Chair","🪑","30–50 Chairs","4 Hours",4199,3099,"Chair cleaning",""],
+  ["Chair","🪑","50–75 Chairs","5 Hours",5499,4099,"Chair cleaning",""],
+  ["Chair","🪑","75–100 Chairs","5 Hours",6499,4999,"Chair cleaning",""],
+
+  ["Pest Control","🪳","1 BHK Cockroach & Ant Control","1–1.5 Hours",1299,999,"Cockroach and ant pest-control treatment",""],
+  ["Pest Control","🪳","2 BHK Cockroach & Ant Control","1–1.5 Hours",1799,1199,"Cockroach and ant pest-control treatment","HOT"],
+  ["Pest Control","🪳","3 BHK Cockroach & Ant Control","1–1.5 Hours",2299,1599,"Cockroach and ant pest-control treatment",""],
+  ["Pest Control","🪳","4 BHK Cockroach & Ant Control","1–1.5 Hours",2799,1999,"Cockroach and ant pest-control treatment",""]
 
 ];
 
 
-/* MOST BOOKED */
-
-const popular=[
-
-["Bathroom","🚿","1 Bathroom","1 Hour",899,549,"Bathroom deep cleaning","HOT"],
-
-["Bathroom","🚿","2 Bathrooms","2 Hours",1499,949,"Bathroom deep cleaning","HOT"],
-
-["Home","🏠","2 BHK Furnished","3 Hours",5099,3599,"Home deep cleaning","HOT"],
-
-["Home","🏠","3 BHK Furnished","4 Hours",5899,4199,"Home deep cleaning","HOT"],
-
-["Kitchen","🍳","Full Kitchen With Chimney","2 Hours",2099,1399,"Full kitchen deep cleaning","HOT"],
-
-["Kitchen","🍳","Full Kitchen Without Chimney","2 Hours",1899,1199,"Full kitchen deep cleaning",""]
-
+const popularNames = [
+  "1 Bathroom",
+  "2 Bathrooms",
+  "2 BHK Furnished",
+  "3 BHK Furnished",
+  "Full Kitchen With Chimney",
+  "Full Kitchen Without Chimney"
 ];
 
 
-const categoryInfo={
+const categoryInfo = {
 
-"Home":{
- icon:"🏠",
- title:"Home Deep Cleaning",
- text:"Professional home cleaning for furnished and unfurnished homes"
-},
+  "Home":{
+    icon:"🏠",
+    title:"Home Deep Cleaning",
+    text:"Professional home cleaning for furnished and unfurnished homes"
+  },
 
-"Kitchen":{
- icon:"🍳",
- title:"Kitchen Cleaning",
- text:"Deep cleaning for kitchen, chimney and appliances"
-},
+  "Kitchen":{
+    icon:"🍳",
+    title:"Kitchen Cleaning",
+    text:"Deep cleaning for kitchen, chimney and appliances"
+  },
 
-"Bathroom":{
- icon:"🚿",
- title:"Bathroom Cleaning",
- text:"Deep bathroom cleaning for a fresh and hygienic space"
-},
+  "Bathroom":{
+    icon:"🚿",
+    title:"Bathroom Cleaning",
+    text:"Deep bathroom cleaning for a fresh and hygienic space"
+  },
 
-"Sofa":{
- icon:"🛋️",
- title:"Sofa Cleaning",
- text:"Professional sofa cleaning according to number of seats"
-},
+  "Sofa":{
+    icon:"🛋️",
+    title:"Sofa Cleaning",
+    text:"Professional sofa cleaning according to number of seats"
+  },
 
-"Water Tank":{
- icon:"🚰",
- title:"Water Tank Cleaning",
- text:"Tank cleaning according to water capacity"
-},
+  "Water Tank":{
+    icon:"🚰",
+    title:"Water Tank Cleaning",
+    text:"Tank cleaning according to water capacity"
+  },
 
-"Glass & Window":{
- icon:"🪟",
- title:"Glass & Window Cleaning",
- text:"Professional glass and window cleaning by square feet"
-},
+  "Glass & Window":{
+    icon:"🪟",
+    title:"Glass & Window Cleaning",
+    text:"Professional glass and window cleaning by square feet"
+  },
 
-"Commercial":{
- icon:"🏢",
- title:"Commercial Cleaning",
- text:"Deep cleaning for offices, shops and commercial spaces"
-},
+  "Commercial":{
+    icon:"🏢",
+    title:"Commercial Cleaning",
+    text:"Deep cleaning for offices, shops and commercial spaces"
+  },
 
-"Carpet & Mattress":{
- icon:"🧼",
- title:"Carpet & Mattress Cleaning",
- text:"Professional carpet and mattress cleaning"
-},
+  "Carpet & Mattress":{
+    icon:"🧼",
+    title:"Carpet & Mattress Cleaning",
+    text:"Professional carpet and mattress cleaning"
+  },
 
-"Chair":{
- icon:"🪑",
- title:"Chair Cleaning",
- text:"Chair cleaning according to quantity"
-},
+  "Chair":{
+    icon:"🪑",
+    title:"Chair Cleaning",
+    text:"Chair cleaning according to quantity"
+  },
 
-"Pest Control":{
- icon:"🪳",
- title:"Pest Control",
- text:"Cockroach and ant control for homes"
-}
+  "Pest Control":{
+    icon:"🪳",
+    title:"Pest Control",
+    text:"Cockroach and ant control for homes"
+  }
 
 };
 
 
-const categories=[
-"All",
-"Home",
-"Kitchen",
-"Bathroom",
-"Sofa",
-"Water Tank",
-"Glass & Window",
-"Commercial",
-"Carpet & Mattress",
-"Chair",
-"Pest Control"
+const categories = [
+  "All",
+  "Home",
+  "Kitchen",
+  "Bathroom",
+  "Sofa",
+  "Water Tank",
+  "Glass & Window",
+  "Commercial",
+  "Carpet & Mattress",
+  "Chair",
+  "Pest Control"
 ];
 
 
-const filters=document.getElementById("filters");
+function createWhatsApp(service){
 
+  const name = service[2];
+  const offer = service[5];
 
-categories.forEach((category,index)=>{
-
- const button=document.createElement("button");
-
- button.className="filter"+(index===0?" active":"");
-
- button.textContent=category;
-
- button.onclick=()=>{
-
-  document
-  .querySelectorAll(".filter")
-  .forEach(b=>b.classList.remove("active"));
-
-  button.classList.add("active");
-
-  renderServices(
-   category,
-   document.getElementById("search").value
+  const message = encodeURIComponent(
+    "Hello KG City Care, I want to book " +
+    name +
+    " at ₹" +
+    offer +
+    "."
   );
 
- };
-
- filters.appendChild(button);
-
-});
+  return "https://wa.me/" + WHATSAPP + "?text=" + message;
+}
 
 
-function makeCard(service){
+function makeCard(service,index){
 
- const [
- category,
- icon,
- name,
- duration,
- regular,
- offer,
- description,
- badge
- ]=service;
+  const category = service[0];
+  const icon = service[1];
+  const name = service[2];
+  const duration = service[3];
+  const regular = service[4];
+  const offer = service[5];
+  const badge = service[7];
 
- const saving=regular-offer;
+  const saving = regular - offer;
 
- const message=encodeURIComponent(
- `Hello KG City Care, I want to book ${name} at ₹${offer}.`
- );
+  return `
+    <article class="card">
 
- return `
+      ${
+        badge
+        ? `<span class="badge">${badge}</span>`
+        : ""
+      }
 
- <article class="card">
+      <h3>${icon} ${name}</h3>
 
- ${badge ? `<span class="badge">${badge}</span>` : ""}
+      <div class="duration">
+        ⏱️ ${duration}
+      </div>
 
- <h3>${icon} ${name}</h3>
+      <div class="old-price">
+        ₹${regular.toLocaleString("en-IN")}
+      </div>
 
- <div class="duration">
- ⏱️ ${duration}
- </div>
+      <div class="offer-price">
+        ₹${offer.toLocaleString("en-IN")}
+      </div>
 
- <div class="old-price">
- ₹${regular.toLocaleString("en-IN")}
- </div>
+      <div class="save">
+        Save ₹${saving.toLocaleString("en-IN")}
+      </div>
 
- <div class="offer-price">
- ₹${offer.toLocaleString("en-IN")}
- </div>
+      <div class="actions">
 
- <div class="save">
- Save ₹${saving.toLocaleString("en-IN")}
- </div>
+        <a
+          class="book-btn"
+          href="${createWhatsApp(service)}"
+        >
+          💬 Book Now
+        </a>
 
- <div class="actions">
+        <button
+          class="details-btn"
+          type="button"
+          data-index="${index}"
+        >
+          View Details
+        </button>
 
- <a
- class="book-btn"
- href="https://wa.me/${WHATSAPP}?text=${message}">
- 💬 Book Now
- </a>
+      </div>
 
- <button
- class="details-btn"
- onclick='openDetails(${JSON.stringify(service)})'>
- View Details
- </button>
+    </article>
+  `;
+}
 
- </div>
 
- </article>
+function attachDetailsButtons(){
 
- `;
+  const buttons =
+    document.querySelectorAll(".details-btn");
+
+  buttons.forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+      const index =
+        Number(this.getAttribute("data-index"));
+
+      openDetails(services[index]);
+
+    });
+
+  });
 
 }
 
 
 function renderPopular(){
 
- document.getElementById("popular").innerHTML=
- popular.map(makeCard).join("");
+  const box =
+    document.getElementById("popular");
+
+  const list =
+    services.filter(function(service){
+
+      return popularNames.indexOf(service[2]) !== -1;
+
+    });
+
+  box.innerHTML =
+    list.map(function(service){
+
+      const index =
+        services.indexOf(service);
+
+      return makeCard(service,index);
+
+    }).join("");
+
+  attachDetailsButtons();
 
 }
 
 
-function renderServices(category="All",search=""){
+function renderServices(category,search){
 
- const query=search.toLowerCase().trim();
+  const selectedCategory =
+    category || "All";
 
- const container=
- document.getElementById("categoryContainer");
+  const searchText =
+    (search || "").toLowerCase().trim();
 
- container.innerHTML="";
+  const container =
+    document.getElementById("categoryContainer");
 
- let total=0;
+  container.innerHTML = "";
 
- categories
- .filter(cat=>cat!=="All")
- . .forEach(c=>{
+  let total = 0;
 
-   if(category!=="All" && c!==category) return;
 
-   const list=services.filter(s=>{
+  categories.forEach(function(cat){
 
-     const matchCategory=s[0]===c;
+    if(cat === "All"){
+      return;
+    }
 
-     const matchSearch=
-       !query ||
-       s[2].toLowerCase().includes(query) ||
-       s[6].toLowerCase().includes(query);
+    if(
+      selectedCategory !== "All" &&
+      selectedCategory !== cat
+    ){
+      return;
+    }
 
-     return matchCategory && matchSearch;
 
-   });
+    const list =
+      services.filter(function(service){
 
-   if(!list.length) return;
+        const categoryMatch =
+          service[0] === cat;
 
-   total+=list.length;
+        const text =
+          (
+            service[2] +
+            " " +
+            service[6]
+          ).toLowerCase();
 
-   const info=categoryInfo[c];
+        const searchMatch =
+          searchText === "" ||
+          text.indexOf(searchText) !== -1;
 
-   const section=document.createElement("section");
+        return categoryMatch && searchMatch;
 
-   section.className="category-section";
+      });
 
-   section.innerHTML=`
 
-     <div class="category-heading">
+    if(list.length === 0){
+      return;
+    }
 
-       <div class="category-icon">
-         ${info.icon}
-       </div>
 
-       <div>
-         <h2>${info.title}</h2>
-         <p>${info.text}</p>
-       </div>
+    total += list.length;
 
-     </div>
 
-     <div class="service-grid">
-       ${list.map(makeCard).join("")}
-     </div>
+    const info =
+      categoryInfo[cat];
 
-   `;
 
-   container.appendChild(section);
+    const section =
+      document.createElement("section");
 
- });
+    section.className =
+      "category-section";
 
- document.getElementById("noResult").style.display=
-   total ? "none" : "block";
+
+    section.innerHTML = `
+
+      <div class="category-heading">
+
+        <div class="category-icon">
+          ${info.icon}
+        </div>
+
+        <div>
+
+          <h2>
+            ${info.title}
+          </h2>
+
+          <p>
+            ${info.text}
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="service-grid">
+
+        ${
+          list.map(function(service){
+
+            const index =
+              services.indexOf(service);
+
+            return makeCard(service,index);
+
+          }).join("")
+        }
+
+      </div>
+
+    `;
+
+
+    container.appendChild(section);
+
+  });
+
+
+  document.getElementById("noResult").style.display =
+    total === 0 ? "block" : "none";
+
+
+  attachDetailsButtons();
 
 }
 
 
 function openDetails(service){
 
- const [
-   category,
-   icon,
-   name,
-   duration,
-   regular,
-   offer,
-   description,
-   badge
- ]=service;
+  if(!service){
+    return;
+  }
 
- document.getElementById("modalTitle").textContent=
-   `${icon} ${name}`;
+  const icon = service[1];
+  const name = service[2];
+  const duration = service[3];
+  const regular = service[4];
+  const offer = service[5];
+  const description = service[6];
 
- document.getElementById("modalDuration").textContent=
-   `⏱️ ${duration}`;
+  document.getElementById("modalTitle").textContent =
+    icon + " " + name;
 
- document.getElementById("modalPrice").textContent=
-   `₹${offer.toLocaleString("en-IN")}`;
+  document.getElementById("modalDuration").textContent =
+    "⏱️ " + duration;
 
- document.getElementById("modalList").innerHTML=`
+  document.getElementById("modalPrice").textContent =
+    "₹" + offer.toLocaleString("en-IN");
 
-   <li>Professional ${description}</li>
-   <li>Experienced cleaning service</li>
-   <li>Cleaning equipment and required materials</li>
-   <li>Final scope depends on site condition</li>
+  document.getElementById("modalList").innerHTML = `
 
- `;
+    <li>${description}</li>
+    <li>Professional cleaning service</li>
+    <li>Required cleaning equipment and materials</li>
+    <li>Service details confirmed before booking</li>
 
- const message=encodeURIComponent(
-   `Hello KG City Care, I want to book ${name} at ₹${offer}.`
- );
+  `;
 
- document.getElementById("modalBook").href=
-   `https://wa.me/${WHATSAPP}?text=${message}`;
+  document.getElementById("modalBook").href =
+    createWhatsApp(service);
 
- document.getElementById("modal").classList.add("show");
+  document.getElementById("modal").classList.add("show");
 
 }
 
 
 function closeModal(){
 
- document.getElementById("modal").classList.remove("show");
+  document
+    .getElementById("modal")
+    .classList.remove("show");
 
 }
 
 
-document.getElementById("search").addEventListener(
- "input",
- function(){
-
-   const active=
-     document.querySelector(".filter.active");
-
-   const category=
-     active ? active.textContent : "All";
-
-   renderServices(category,this.value);
-
- }
-);
+document
+  .getElementById("closeModal")
+  .addEventListener("click",closeModal);
 
 
-document.getElementById("modal").addEventListener(
- "click",
- function(e){
+document
+  .getElementById("modal")
+  .addEventListener("click",function(event){
 
-   if(e.target===this){
-     closeModal();
-   }
+    if(event.target === this){
+      closeModal();
+    }
 
- }
-);
+  });
+
+
+const filterBox =
+  document.getElementById("filters");
+
+
+categories.forEach(function(category,index){
+
+  const button =
+    document.createElement("button");
+
+  button.type = "button";
+
+  button.className =
+    "filter" +
+    (index === 0 ? " active" : "");
+
+  button.textContent =
+    category;
+
+  button.addEventListener("click",function(){
+
+    document
+      .querySelectorAll(".filter")
+      .forEach(function(item){
+
+        item.classList.remove("active");
+
+      });
+
+    this.classList.add("active");
+
+    renderServices(
+      category,
+      document.getElementById("search").value
+    );
+
+  });
+
+  filterBox.appendChild(button);
+
+});
+
+
+document
+  .getElementById("search")
+  .addEventListener("input",function(){
+
+    const active =
+      document.querySelector(".filter.active");
+
+    const category =
+      active ? active.textContent : "All";
+
+    renderServices(
+      category,
+      this.value
+    );
+
+  });
 
 
 renderPopular();
 
-renderServices();
+renderServices("All","");
 
 </script>
 
