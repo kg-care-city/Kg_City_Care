@@ -1137,4 +1137,147 @@ function renderServices(category="All",search=""){
 
  categories
  .filter(cat=>cat!=="All")
- .forEach(c
+ . .forEach(c=>{
+
+   if(category!=="All" && c!==category) return;
+
+   const list=services.filter(s=>{
+
+     const matchCategory=s[0]===c;
+
+     const matchSearch=
+       !query ||
+       s[2].toLowerCase().includes(query) ||
+       s[6].toLowerCase().includes(query);
+
+     return matchCategory && matchSearch;
+
+   });
+
+   if(!list.length) return;
+
+   total+=list.length;
+
+   const info=categoryInfo[c];
+
+   const section=document.createElement("section");
+
+   section.className="category-section";
+
+   section.innerHTML=`
+
+     <div class="category-heading">
+
+       <div class="category-icon">
+         ${info.icon}
+       </div>
+
+       <div>
+         <h2>${info.title}</h2>
+         <p>${info.text}</p>
+       </div>
+
+     </div>
+
+     <div class="service-grid">
+       ${list.map(makeCard).join("")}
+     </div>
+
+   `;
+
+   container.appendChild(section);
+
+ });
+
+ document.getElementById("noResult").style.display=
+   total ? "none" : "block";
+
+}
+
+
+function openDetails(service){
+
+ const [
+   category,
+   icon,
+   name,
+   duration,
+   regular,
+   offer,
+   description,
+   badge
+ ]=service;
+
+ document.getElementById("modalTitle").textContent=
+   `${icon} ${name}`;
+
+ document.getElementById("modalDuration").textContent=
+   `⏱️ ${duration}`;
+
+ document.getElementById("modalPrice").textContent=
+   `₹${offer.toLocaleString("en-IN")}`;
+
+ document.getElementById("modalList").innerHTML=`
+
+   <li>Professional ${description}</li>
+   <li>Experienced cleaning service</li>
+   <li>Cleaning equipment and required materials</li>
+   <li>Final scope depends on site condition</li>
+
+ `;
+
+ const message=encodeURIComponent(
+   `Hello KG City Care, I want to book ${name} at ₹${offer}.`
+ );
+
+ document.getElementById("modalBook").href=
+   `https://wa.me/${WHATSAPP}?text=${message}`;
+
+ document.getElementById("modal").classList.add("show");
+
+}
+
+
+function closeModal(){
+
+ document.getElementById("modal").classList.remove("show");
+
+}
+
+
+document.getElementById("search").addEventListener(
+ "input",
+ function(){
+
+   const active=
+     document.querySelector(".filter.active");
+
+   const category=
+     active ? active.textContent : "All";
+
+   renderServices(category,this.value);
+
+ }
+);
+
+
+document.getElementById("modal").addEventListener(
+ "click",
+ function(e){
+
+   if(e.target===this){
+     closeModal();
+   }
+
+ }
+);
+
+
+renderPopular();
+
+renderServices();
+
+</script>
+
+</body>
+</html>
