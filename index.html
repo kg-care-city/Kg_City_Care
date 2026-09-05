@@ -6,8 +6,7 @@
 
 <title>KG City Care | Cleaning Services in Indore</title>
 
-<meta name="description"
-content="KG City Care provides professional home deep cleaning, kitchen, bathroom, sofa, carpet, mattress, commercial, water tank, glass and pest control services in Indore.">
+<meta name="description" content="KG City Care provides professional home, kitchen, bathroom, sofa, water tank, glass, commercial, carpet, mattress, chair and pest control cleaning services in Indore.">
 
 <style>
 :root{
@@ -17,6 +16,7 @@ content="KG City Care provides professional home deep cleaning, kitchen, bathroo
  --green:#20b866;
  --red:#e53935;
  --light:#f3f9fc;
+ --border:#e1edf3;
 }
 
 *{
@@ -34,7 +34,6 @@ body{
 header{
  background:linear-gradient(135deg,#05639a,#00addb);
  color:white;
- overflow:hidden;
 }
 
 .topbar{
@@ -42,8 +41,8 @@ header{
  margin:auto;
  padding:14px 18px;
  display:flex;
- justify-content:space-between;
  align-items:center;
+ justify-content:space-between;
 }
 
 .logo{
@@ -57,9 +56,8 @@ header{
 .logo-icon{
  width:48px;
  height:48px;
- background:white;
- color:var(--blue);
  border-radius:15px;
+ background:white;
  display:flex;
  align-items:center;
  justify-content:center;
@@ -77,7 +75,7 @@ header{
  max-width:1200px;
  margin:auto;
  text-align:center;
- padding:48px 15px 60px;
+ padding:45px 15px 60px;
 }
 
 .hero h1{
@@ -92,8 +90,8 @@ header{
 .hero p{
  max-width:720px;
  margin:auto;
- line-height:1.6;
  font-size:18px;
+ line-height:1.6;
 }
 
 .hero-buttons{
@@ -105,11 +103,12 @@ header{
 }
 
 .hero-btn{
- text-decoration:none;
+ display:inline-block;
  padding:13px 22px;
  border-radius:12px;
  background:white;
  color:var(--blue);
+ text-decoration:none;
  font-weight:bold;
 }
 
@@ -154,6 +153,47 @@ header{
 .section-title p{
  color:#687983;
  margin-top:7px;
+}
+
+/* CATEGORY */
+
+.category-section{
+ margin-top:35px;
+}
+
+.category-heading{
+ display:flex;
+ align-items:center;
+ gap:14px;
+ background:white;
+ border-radius:18px;
+ padding:17px 20px;
+ margin-bottom:15px;
+ border:1px solid var(--border);
+ box-shadow:0 7px 22px #0000000b;
+}
+
+.category-icon{
+ width:55px;
+ height:55px;
+ border-radius:15px;
+ background:linear-gradient(135deg,#e7f7fd,#d8f4ff);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:29px;
+ flex-shrink:0;
+}
+
+.category-heading h2{
+ color:var(--blue);
+ font-size:23px;
+}
+
+.category-heading p{
+ color:#73838c;
+ font-size:13px;
+ margin-top:4px;
 }
 
 .search{
@@ -204,14 +244,14 @@ header{
 .service-grid{
  display:grid;
  grid-template-columns:repeat(3,1fr);
- gap:17px;
+ gap:15px;
 }
 
 .card{
  background:white;
- border:1px solid #e0edf3;
+ border:1px solid var(--border);
  border-radius:18px;
- padding:18px;
+ padding:17px;
  position:relative;
  box-shadow:0 8px 25px #0000000c;
  transition:.25s;
@@ -224,28 +264,28 @@ header{
 
 .badge{
  position:absolute;
- right:13px;
- top:13px;
+ right:12px;
+ top:12px;
  background:#ff5722;
  color:white;
  padding:5px 9px;
  border-radius:50px;
- font-size:11px;
+ font-size:10px;
  font-weight:bold;
 }
 
 .card h3{
  color:var(--blue);
- font-size:18px;
+ font-size:17px;
  line-height:1.35;
- padding-right:55px;
+ padding-right:45px;
  margin-bottom:9px;
 }
 
 .duration{
  color:#6b7b84;
  font-size:13px;
- margin-bottom:12px;
+ margin-bottom:10px;
 }
 
 .old-price{
@@ -256,7 +296,7 @@ header{
 
 .offer-price{
  color:var(--red);
- font-size:28px;
+ font-size:27px;
  font-weight:900;
  margin-top:3px;
 }
@@ -269,25 +309,26 @@ header{
  border-radius:7px;
  font-size:12px;
  font-weight:bold;
- margin-top:8px;
+ margin-top:7px;
 }
 
 .actions{
  display:flex;
  gap:8px;
- margin-top:15px;
+ margin-top:14px;
 }
 
 .book-btn,
 .details-btn{
  flex:1;
  border:0;
- padding:11px 7px;
+ padding:10px 6px;
  border-radius:10px;
  font-weight:bold;
  text-align:center;
  cursor:pointer;
  text-decoration:none;
+ font-size:13px;
 }
 
 .book-btn{
@@ -300,13 +341,19 @@ header{
  color:var(--blue);
 }
 
+.no-result{
+ display:none;
+ text-align:center;
+ padding:30px;
+ color:#777;
+}
+
 .note{
  margin-top:35px;
  background:#fff8df;
  border-left:4px solid #ffb300;
  padding:15px;
  border-radius:8px;
- color:#5d4a00;
  line-height:1.5;
 }
 
@@ -319,15 +366,15 @@ footer{
 
 footer a{
  color:white;
- font-weight:bold;
  text-decoration:none;
+ font-weight:bold;
 }
 
 .floating{
  position:fixed;
  right:16px;
  bottom:18px;
- z-index:20;
+ z-index:50;
  display:flex;
  flex-direction:column;
  gap:9px;
@@ -354,6 +401,8 @@ footer a{
  background:var(--blue);
 }
 
+/* MODAL */
+
 .modal{
  display:none;
  position:fixed;
@@ -375,7 +424,7 @@ footer a{
  max-height:85vh;
  overflow:auto;
  border-radius:20px;
- padding:24px;
+ padding:25px;
  position:relative;
 }
 
@@ -395,7 +444,6 @@ footer a{
 .modal h2{
  color:var(--blue);
  padding-right:40px;
- margin-bottom:10px;
 }
 
 .modal-price{
@@ -412,17 +460,14 @@ footer a{
  margin-bottom:18px;
 }
 
-.no-result{
- display:none;
- text-align:center;
- padding:30px;
- color:#777;
-}
+/* MOBILE */
 
 @media(max-width:850px){
+
  .service-grid{
   grid-template-columns:repeat(2,1fr);
  }
+
 }
 
 @media(max-width:600px){
@@ -466,26 +511,40 @@ footer a{
   font-size:23px;
  }
 
+ .category-heading{
+  padding:13px;
+ }
+
+ .category-icon{
+  width:48px;
+  height:48px;
+  font-size:24px;
+ }
+
+ .category-heading h2{
+  font-size:19px;
+ }
+
  .service-grid{
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:10px;
+  gap:9px;
  }
 
  .card{
-  padding:13px;
+  padding:12px;
   border-radius:15px;
  }
 
  .card h3{
-  font-size:15px;
+  font-size:14px;
  }
 
  .offer-price{
-  font-size:23px;
+  font-size:22px;
  }
 
  .old-price{
-  font-size:12px;
+  font-size:11px;
  }
 
  .duration{
@@ -503,8 +562,8 @@ footer a{
  .book-btn,
  .details-btn{
   width:100%;
-  font-size:12px;
-  padding:10px;
+  font-size:11px;
+  padding:9px;
  }
 }
 </style>
@@ -534,8 +593,8 @@ Professional <span>Cleaning Services</span> in Indore
 </h1>
 
 <p>
-Home, kitchen, bathroom, sofa, commercial, water tank,
-glass, mattress and pest control cleaning services.
+Home, kitchen, bathroom, sofa, water tank, glass,
+commercial, carpet, mattress, chair and pest control services.
 </p>
 
 <div class="hero-buttons">
@@ -545,8 +604,7 @@ href="https://wa.me/919589125706?text=Hello%20KG%20City%20Care,%20I%20want%20to%
 💬 Book on WhatsApp
 </a>
 
-<a class="hero-btn"
-href="tel:+919589125706">
+<a class="hero-btn" href="tel:+919589125706">
 📞 Call Now
 </a>
 
@@ -567,6 +625,8 @@ href="tel:+919589125706">
 </div>
 
 
+<!-- MOST BOOKED -->
+
 <div class="section-title">
 <h2>🔥 Most Booked Services</h2>
 <p>Popular services customers book most</p>
@@ -575,16 +635,17 @@ href="tel:+919589125706">
 <div id="popular" class="service-grid"></div>
 
 
+<!-- SEARCH -->
+
 <div class="section-title">
 
-<h2>🧹 All Cleaning Services</h2>
+<h2>🧹 Our Cleaning Services</h2>
 
 <p>
-Search or select a category
+Choose your service and check the available rates
 </p>
 
 </div>
-
 
 <div class="search">
 
@@ -599,7 +660,8 @@ placeholder="🔎 Search cleaning service..."
 
 <div class="filters" id="filters"></div>
 
-<div id="services" class="service-grid"></div>
+
+<div id="categoryContainer"></div>
 
 <div id="noResult" class="no-result">
 No service found. Please call or WhatsApp us for a custom quote.
@@ -622,28 +684,26 @@ Please confirm the scope before booking.
 
 <h2>🧹 KG City Care</h2>
 
-<p>Professional Cleaning Services in Indore</p>
-
-<p>
-📞
-<a href="tel:+919589125706">
-9589125706
-</a>
+<p style="margin-top:8px;">
+Professional Cleaning Services in Indore
 </p>
 
-<p>
-💬
-<a href="https://wa.me/919589125706">
-WhatsApp Booking
-</a>
+<p style="margin-top:8px;">
+📞 <a href="tel:+919589125706">9589125706</a>
 </p>
 
-<p style="margin-top:12px;font-size:12px;opacity:.7;">
+<p style="margin-top:8px;">
+💬 <a href="https://wa.me/919589125706">WhatsApp Booking</a>
+</p>
+
+<p style="margin-top:14px;font-size:12px;opacity:.7;">
 © 2026 KG City Care. All Rights Reserved.
 </p>
 
 </footer>
 
+
+<!-- FLOATING BUTTONS -->
 
 <div class="floating">
 
@@ -663,6 +723,8 @@ href="tel:+919589125706"
 
 </div>
 
+
+<!-- MODAL -->
 
 <div class="modal" id="modal">
 
@@ -692,6 +754,8 @@ href="tel:+919589125706"
 const WHATSAPP="919589125706";
 
 
+/* ALL SERVICES */
+
 const services=[
 
 /* HOME */
@@ -703,6 +767,8 @@ const services=[
 ["Home","🏠","3 BHK Furnished","4 Hours",5899,4199,"Complete home deep cleaning","POPULAR"],
 
 ["Home","🏠","2 BHK Unfurnished","3 Hours",4399,3099,"Home deep cleaning",""],
+
+["Home","🏠","2 BHK Basic Cleaning","1 Hour",1899,1199,"Basic 2 BHK cleaning service",""],
 
 
 /* KITCHEN */
@@ -854,6 +920,8 @@ const services=[
 ];
 
 
+/* MOST BOOKED */
+
 const popular=[
 
 ["Bathroom","🚿","1 Bathroom","1 Hour",899,549,"Bathroom deep cleaning","HOT"],
@@ -869,6 +937,71 @@ const popular=[
 ["Kitchen","🍳","Full Kitchen Without Chimney","2 Hours",1899,1199,"Full kitchen deep cleaning",""]
 
 ];
+
+
+const categoryInfo={
+
+"Home":{
+ icon:"🏠",
+ title:"Home Deep Cleaning",
+ text:"Professional home cleaning for furnished and unfurnished homes"
+},
+
+"Kitchen":{
+ icon:"🍳",
+ title:"Kitchen Cleaning",
+ text:"Deep cleaning for kitchen, chimney and appliances"
+},
+
+"Bathroom":{
+ icon:"🚿",
+ title:"Bathroom Cleaning",
+ text:"Deep bathroom cleaning for a fresh and hygienic space"
+},
+
+"Sofa":{
+ icon:"🛋️",
+ title:"Sofa Cleaning",
+ text:"Professional sofa cleaning according to number of seats"
+},
+
+"Water Tank":{
+ icon:"🚰",
+ title:"Water Tank Cleaning",
+ text:"Tank cleaning according to water capacity"
+},
+
+"Glass & Window":{
+ icon:"🪟",
+ title:"Glass & Window Cleaning",
+ text:"Professional glass and window cleaning by square feet"
+},
+
+"Commercial":{
+ icon:"🏢",
+ title:"Commercial Cleaning",
+ text:"Deep cleaning for offices, shops and commercial spaces"
+},
+
+"Carpet & Mattress":{
+ icon:"🧼",
+ title:"Carpet & Mattress Cleaning",
+ text:"Professional carpet and mattress cleaning"
+},
+
+"Chair":{
+ icon:"🪑",
+ title:"Chair Cleaning",
+ text:"Chair cleaning according to quantity"
+},
+
+"Pest Control":{
+ icon:"🪳",
+ title:"Pest Control",
+ text:"Cockroach and ant control for homes"
+}
+
+};
 
 
 const categories=[
@@ -995,116 +1128,13 @@ function renderServices(category="All",search=""){
 
  const query=search.toLowerCase().trim();
 
- const result=services.filter(service=>{
+ const container=
+ document.getElementById("categoryContainer");
 
-  const matchCategory=
-  category==="All" || service[0]===category;
+ container.innerHTML="";
 
-  const text=
-  `${service[0]} ${service[2]} ${service[6]}`
-  .toLowerCase();
+ let total=0;
 
-  return matchCategory && text.includes(query);
-
- });
-
- document.getElementById("services").innerHTML=
- result.map(makeCard).join("");
-
- document.getElementById("noResult").style.display=
- result.length ? "none" : "block";
-
-}
-
-
-document
-.getElementById("search")
-.addEventListener("input",function(){
-
- const active=
- document.querySelector(".filter.active")?.textContent || "All";
-
- renderServices(active,this.value);
-
-});
-
-
-function openDetails(service){
-
- const [
- category,
- icon,
- name,
- duration,
- regular,
- offer,
- description
- ]=service;
-
- document.getElementById("modalTitle").textContent=
- `${icon} ${name}`;
-
- document.getElementById("modalDuration").textContent=
- `⏱️ ${duration}`;
-
- document.getElementById("modalPrice").textContent=
- `₹${offer.toLocaleString("en-IN")} Offer Price`;
-
- document.getElementById("modalList").innerHTML=`
-
- <li>${description}</li>
-
- <li>Professional cleaning service in Indore</li>
-
- <li>Regular Price:
- ₹${regular.toLocaleString("en-IN")}
- </li>
-
- <li>Saving:
- ₹${(regular-offer).toLocaleString("en-IN")}
- </li>
-
- `;
-
- document.getElementById("modalBook").href=
- `https://wa.me/${WHATSAPP}?text=${
- encodeURIComponent(
- `Hello KG City Care, I want to book ${name} at ₹${offer}.`
- )
- }`;
-
- document
- .getElementById("modal")
- .classList.add("show");
-
-}
-
-
-function closeModal(){
-
- document
- .getElementById("modal")
- .classList.remove("show");
-
-}
-
-
-document
-.getElementById("modal")
-.addEventListener("click",function(e){
-
- if(e.target.id==="modal"){
-  closeModal();
- }
-
-});
-
-
-renderPopular();
-
-renderServices();
-
-</script>
-
-</body>
-</html>
+ categories
+ .filter(cat=>cat!=="All")
+ .forEach(c
